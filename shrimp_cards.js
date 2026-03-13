@@ -1,0 +1,1267 @@
+// 🦐 虾虾卡牌数据
+// 生成时间: 2026-03-12 11:18:10
+// 卡牌数量: 50
+
+const shrimpCards = [
+  {
+    "id": "SHRIMP_1015_111810",
+    "name": "酷炫虾王",
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "wish": "治愈",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "华丽",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "这只虾虾以勇敢著称，心中怀有治愈的愿望，喜欢华丽的风格。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_3664_111810",
+    "name": "霸气虾舞",
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "wish": "霸气",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "华丽",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "力量爆发",
+    "description": "拥有狂野性格的虾虾，致力于霸气的事业，崇尚华丽的美学。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_4245_111810",
+    "name": "梦幻虾歌",
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "wish": "治愈",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "梦幻",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "拥有沉稳性格的虾虾，致力于治愈的事业，崇尚梦幻的美学。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_1030_111810",
+    "name": "华丽虾剑",
+    "cost": 1,
+    "attack": 1,
+    "health": 1,
+    "wish": "文艺",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "清新",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "一只文艺的虾虾，性格智慧，审美清新。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_3095_111810",
+    "name": "勇敢虾影",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "wish": "文艺",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "华丽",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": "美学精通",
+    "description": "拥有沉稳性格的虾虾，致力于文艺的事业，崇尚华丽的美学。",
+    "combat_power": 2.5,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.5,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_2656_111810",
+    "name": "狂野虾魂",
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "wish": "治愈",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "华丽",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": null,
+    "description": "勇敢的虾虾，追寻着治愈的梦想，展现出华丽的魅力。",
+    "combat_power": 2.5,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.5,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_1423_111810",
+    "name": "内向虾舞",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "wish": "战斗",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "清新",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "防御强化",
+    "description": "一只战斗的虾虾，性格勇敢，审美清新。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_7940_111810",
+    "name": "沉稳虾弓",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "wish": "霸气",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "独特",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": null,
+    "description": "狂野的虾虾，追寻着霸气的梦想，展现出独特的魅力。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_1786_111810",
+    "name": "狂野虾仙",
+    "cost": 3,
+    "attack": 5,
+    "health": 4,
+    "wish": "神秘",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "梦幻",
+    "rarity": "超级稀有",
+    "rarity_color": "#FFD166",
+    "ability": "幻象分身",
+    "description": "这只虾虾以沉稳著称，心中怀有神秘的愿望，喜欢梦幻的风格。",
+    "combat_power": 3.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 3.0,
+      "target_min": 2.5,
+      "target_max": 3.5
+    }
+  },
+  {
+    "id": "SHRIMP_5666_111810",
+    "name": "优雅虾神",
+    "cost": 3,
+    "attack": 4,
+    "health": 4,
+    "wish": "战斗",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "清新",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": null,
+    "description": "一只战斗的虾虾，性格勇敢，审美清新。",
+    "combat_power": 2.67,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.67,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_8767_111810",
+    "name": "外向虾舞",
+    "cost": 3,
+    "attack": 4,
+    "health": 3,
+    "wish": "文艺",
+    "personality": "狡猾",
+    "personality_icon": "🦊",
+    "personality_color": "#FFD166",
+    "aesthetic": "独特",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": "音乐共鸣",
+    "description": "狡猾的虾虾，追寻着文艺的梦想，展现出独特的魅力。",
+    "combat_power": 2.33,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.33,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_2466_111810",
+    "name": "神秘虾灵",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "wish": "神秘",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "酷炫",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "智慧的虾虾，追寻着神秘的梦想，展现出酷炫的魅力。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_3196_111810",
+    "name": "清新虾梦",
+    "cost": 3,
+    "attack": 4,
+    "health": 2,
+    "wish": "神秘",
+    "personality": "狡猾",
+    "personality_icon": "🦊",
+    "personality_color": "#FFD166",
+    "aesthetic": "梦幻",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "能量吸收",
+    "description": "一只神秘的虾虾，性格狡猾，审美梦幻。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_2853_111810",
+    "name": "霸气虾仙",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "wish": "文艺",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "酷炫",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "艺术灵感",
+    "description": "一只狂野的虾虾，拥有文艺的愿望，审美偏向酷炫。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_6911_111810",
+    "name": "温柔虾灵",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "wish": "霸气",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "梦幻",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "拥有智慧性格的虾虾，致力于霸气的事业，崇尚梦幻的美学。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_2778_111810",
+    "name": "热情虾盾",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "wish": "霸气",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "华丽",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "一只霸气的虾虾，性格勇敢，审美华丽。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_6740_111810",
+    "name": "开朗虾神",
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "wish": "治愈",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "梦幻",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "一只治愈的虾虾，性格狂野，审美梦幻。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_3386_111810",
+    "name": "狂野虾盾",
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "wish": "文艺",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "独特",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "一只文艺的虾虾，性格狂野，审美独特。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_6542_111810",
+    "name": "狂野虾光",
+    "cost": 3,
+    "attack": 2,
+    "health": 4,
+    "wish": "治愈",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "华丽",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "拥有勇敢性格的虾虾，致力于治愈的事业，崇尚华丽的美学。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_2005_111810",
+    "name": "外向虾神",
+    "cost": 3,
+    "attack": 4,
+    "health": 2,
+    "wish": "文艺",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "独特",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "拥有智慧性格的虾虾，致力于文艺的事业，崇尚独特的美学。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_1432_111810",
+    "name": "内向虾梦",
+    "cost": 4,
+    "attack": 5,
+    "health": 5,
+    "wish": "文艺",
+    "personality": "狡猾",
+    "personality_icon": "🦊",
+    "personality_color": "#FFD166",
+    "aesthetic": "梦幻",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": null,
+    "description": "一只文艺的虾虾，性格狡猾，审美梦幻。",
+    "combat_power": 2.5,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.5,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_9094_111810",
+    "name": "刚毅虾画",
+    "cost": 4,
+    "attack": 5,
+    "health": 5,
+    "wish": "文艺",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "清新",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": null,
+    "description": "一只勇敢的虾虾，拥有文艺的愿望，审美偏向清新。",
+    "combat_power": 2.5,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.5,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_7711_111810",
+    "name": "机智虾诗",
+    "cost": 4,
+    "attack": 4,
+    "health": 5,
+    "wish": "战斗",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "独特",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": null,
+    "description": "拥有智慧性格的虾虾，致力于战斗的事业，崇尚独特的美学。",
+    "combat_power": 2.25,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.25,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_5570_111810",
+    "name": "智慧虾王",
+    "cost": 4,
+    "attack": 3,
+    "health": 6,
+    "wish": "文艺",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "清新",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": null,
+    "description": "这只虾虾以智慧著称，心中怀有文艺的愿望，喜欢清新的风格。",
+    "combat_power": 2.25,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.25,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_4022_111810",
+    "name": "外向虾梦",
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "wish": "治愈",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "清新",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "复苏之力",
+    "description": "这只虾虾以智慧著称，心中怀有治愈的愿望，喜欢清新的风格。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_6824_111810",
+    "name": "内向虾神",
+    "cost": 4,
+    "attack": 5,
+    "health": 3,
+    "wish": "治愈",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "独特",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "拥有沉稳性格的虾虾，致力于治愈的事业，崇尚独特的美学。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_2587_111810",
+    "name": "坚韧虾神",
+    "cost": 4,
+    "attack": 5,
+    "health": 3,
+    "wish": "文艺",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "华丽",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "狂野的虾虾，追寻着文艺的梦想，展现出华丽的魅力。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_9184_111810",
+    "name": "华丽虾仙",
+    "cost": 4,
+    "attack": 6,
+    "health": 2,
+    "wish": "霸气",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "酷炫",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "王者之威",
+    "description": "一只狂野的虾虾，拥有霸气的愿望，审美偏向酷炫。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_9583_111810",
+    "name": "狡猾虾王",
+    "cost": 4,
+    "attack": 4,
+    "health": 4,
+    "wish": "文艺",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "清新",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "诗歌吟唱",
+    "description": "一只文艺的虾虾，性格狂野，审美清新。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_4609_111810",
+    "name": "酷炫虾将",
+    "cost": 4,
+    "attack": 3,
+    "health": 5,
+    "wish": "霸气",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "华丽",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "王者之威",
+    "description": "一只霸气的虾虾，性格狂野，审美华丽。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_1628_111810",
+    "name": "灵动虾法",
+    "cost": 5,
+    "attack": 8,
+    "health": 14,
+    "wish": "治愈",
+    "personality": "狂野",
+    "personality_icon": "🐺",
+    "personality_color": "#F56565",
+    "aesthetic": "清新",
+    "rarity": "传说",
+    "rarity_color": "#FF6B6B",
+    "ability": "生命恢复",
+    "description": "一只狂野的虾虾，拥有治愈的愿望，审美偏向清新。",
+    "combat_power": 4.4,
+    "balance_analysis": {
+      "rating": "偏强",
+      "suggestion": "减少攻击或生命值",
+      "combat_power": 4.4,
+      "target_min": 3.0,
+      "target_max": 4.0
+    }
+  },
+  {
+    "id": "SHRIMP_6603_111810",
+    "name": "霸气虾剑",
+    "cost": 5,
+    "attack": 6,
+    "health": 9,
+    "wish": "神秘",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "酷炫",
+    "rarity": "超级稀有",
+    "rarity_color": "#FFD166",
+    "ability": "能量吸收",
+    "description": "拥有沉稳性格的虾虾，致力于神秘的事业，崇尚酷炫的美学。",
+    "combat_power": 3.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 3.0,
+      "target_min": 2.5,
+      "target_max": 3.5
+    }
+  },
+  {
+    "id": "SHRIMP_2008_111810",
+    "name": "治愈小虾",
+    "cost": 5,
+    "attack": 5,
+    "health": 7,
+    "wish": "治愈",
+    "personality": "狡猾",
+    "personality_icon": "🦊",
+    "personality_color": "#FFD166",
+    "aesthetic": "清新",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": "生命恢复",
+    "description": "这只虾虾以狡猾著称，心中怀有治愈的愿望，喜欢清新的风格。",
+    "combat_power": 2.4,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.4,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_7449_111810",
+    "name": "机智虾后",
+    "cost": 5,
+    "attack": 4,
+    "health": 8,
+    "wish": "文艺",
+    "personality": "狡猾",
+    "personality_icon": "🦊",
+    "personality_color": "#FFD166",
+    "aesthetic": "清新",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": null,
+    "description": "一只文艺的虾虾，性格狡猾，审美清新。",
+    "combat_power": 2.4,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.4,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_7862_111810",
+    "name": "灵动小虾",
+    "cost": 5,
+    "attack": 6,
+    "health": 4,
+    "wish": "文艺",
+    "personality": "狡猾",
+    "personality_icon": "🦊",
+    "personality_color": "#FFD166",
+    "aesthetic": "酷炫",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "这只虾虾以狡猾著称，心中怀有文艺的愿望，喜欢酷炫的风格。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_4016_111810",
+    "name": "优雅虾将",
+    "cost": 5,
+    "attack": 4,
+    "health": 6,
+    "wish": "霸气",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "华丽",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "一只霸气的虾虾，性格勇敢，审美华丽。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_1893_111810",
+    "name": "狡猾虾影",
+    "cost": 5,
+    "attack": 4,
+    "health": 6,
+    "wish": "文艺",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "独特",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "诗歌吟唱",
+    "description": "这只虾虾以沉稳著称，心中怀有文艺的愿望，喜欢独特的风格。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_4702_111810",
+    "name": "灵动虾后",
+    "cost": 5,
+    "attack": 4,
+    "health": 6,
+    "wish": "文艺",
+    "personality": "狡猾",
+    "personality_icon": "🦊",
+    "personality_color": "#FFD166",
+    "aesthetic": "清新",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "一只文艺的虾虾，性格狡猾，审美清新。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_3491_111810",
+    "name": "治愈虾后",
+    "cost": 5,
+    "attack": 4,
+    "health": 6,
+    "wish": "文艺",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "酷炫",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "诗歌吟唱",
+    "description": "这只虾虾以沉稳著称，心中怀有文艺的愿望，喜欢酷炫的风格。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_5188_111810",
+    "name": "冷静虾法",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "wish": "霸气",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "梦幻",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "一只智慧的虾虾，拥有霸气的愿望，审美偏向梦幻。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_9713_111810",
+    "name": "内向虾梦",
+    "cost": 5,
+    "attack": 3,
+    "health": 7,
+    "wish": "文艺",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "梦幻",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": "创意爆发",
+    "description": "一只沉稳的虾虾，拥有文艺的愿望，审美偏向梦幻。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_8581_111810",
+    "name": "沉稳虾光",
+    "cost": 5,
+    "attack": 3,
+    "health": 7,
+    "wish": "文艺",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "独特",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "这只虾虾以勇敢著称，心中怀有文艺的愿望，喜欢独特的风格。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_6665_111810",
+    "name": "热情虾梦",
+    "cost": 5,
+    "attack": 5,
+    "health": 5,
+    "wish": "治愈",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "独特",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "拥有勇敢性格的虾虾，致力于治愈的事业，崇尚独特的美学。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_9544_111810",
+    "name": "冷静虾宝",
+    "cost": 5,
+    "attack": 4,
+    "health": 6,
+    "wish": "文艺",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "梦幻",
+    "rarity": "普通",
+    "rarity_color": "#A0AEC0",
+    "ability": null,
+    "description": "一只文艺的虾虾，性格沉稳，审美梦幻。",
+    "combat_power": 2.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.0,
+      "target_min": 1.5,
+      "target_max": 2.5
+    }
+  },
+  {
+    "id": "SHRIMP_4701_111810",
+    "name": "智慧虾画",
+    "cost": 6,
+    "attack": 9,
+    "health": 14,
+    "wish": "神秘",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "清新",
+    "rarity": "传说",
+    "rarity_color": "#FF6B6B",
+    "ability": null,
+    "description": "拥有沉稳性格的虾虾，致力于神秘的事业，崇尚清新的美学。",
+    "combat_power": 3.83,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 3.83,
+      "target_min": 3.0,
+      "target_max": 4.0
+    }
+  },
+  {
+    "id": "SHRIMP_9555_111810",
+    "name": "梦幻虾神",
+    "cost": 6,
+    "attack": 7,
+    "health": 11,
+    "wish": "文艺",
+    "personality": "沉稳",
+    "personality_icon": "🧘",
+    "personality_color": "#A0AEC0",
+    "aesthetic": "清新",
+    "rarity": "超级稀有",
+    "rarity_color": "#FFD166",
+    "ability": "美学精通",
+    "description": "一只沉稳的虾虾，拥有文艺的愿望，审美偏向清新。",
+    "combat_power": 3.0,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 3.0,
+      "target_min": 2.5,
+      "target_max": 3.5
+    }
+  },
+  {
+    "id": "SHRIMP_9487_111810",
+    "name": "刚毅虾盾",
+    "cost": 6,
+    "attack": 8,
+    "health": 7,
+    "wish": "霸气",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "独特",
+    "rarity": "稀有",
+    "rarity_color": "#4ECDC4",
+    "ability": "力量爆发",
+    "description": "勇敢的虾虾，追寻着霸气的梦想，展现出独特的魅力。",
+    "combat_power": 2.5,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.5,
+      "target_min": 2.0,
+      "target_max": 3.0
+    }
+  },
+  {
+    "id": "SHRIMP_8463_111810",
+    "name": "独特虾仔",
+    "cost": 7,
+    "attack": 7,
+    "health": 12,
+    "wish": "神秘",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "酷炫",
+    "rarity": "超级稀有",
+    "rarity_color": "#FFD166",
+    "ability": null,
+    "description": "这只虾虾以智慧著称，心中怀有神秘的愿望，喜欢酷炫的风格。",
+    "combat_power": 2.71,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.71,
+      "target_min": 2.5,
+      "target_max": 3.5
+    }
+  },
+  {
+    "id": "SHRIMP_3775_111810",
+    "name": "灵动虾歌",
+    "cost": 8,
+    "attack": 10,
+    "health": 11,
+    "wish": "治愈",
+    "personality": "勇敢",
+    "personality_icon": "🛡️",
+    "personality_color": "#FF6B6B",
+    "aesthetic": "清新",
+    "rarity": "超级稀有",
+    "rarity_color": "#FFD166",
+    "ability": "复苏之力",
+    "description": "一只治愈的虾虾，性格勇敢，审美清新。",
+    "combat_power": 2.62,
+    "balance_analysis": {
+      "rating": "平衡",
+      "suggestion": "无需调整",
+      "combat_power": 2.62,
+      "target_min": 2.5,
+      "target_max": 3.5
+    }
+  },
+  {
+    "id": "SHRIMP_7442_111810",
+    "name": "狂野虾剑",
+    "cost": 10,
+    "attack": 12,
+    "health": 14,
+    "wish": "霸气",
+    "personality": "智慧",
+    "personality_icon": "📚",
+    "personality_color": "#4ECDC4",
+    "aesthetic": "独特",
+    "rarity": "传说",
+    "rarity_color": "#FF6B6B",
+    "ability": "霸气宣言",
+    "description": "智慧的虾虾，追寻着霸气的梦想，展现出独特的魅力。",
+    "combat_power": 2.6,
+    "balance_analysis": {
+      "rating": "偏弱",
+      "suggestion": "增加攻击或生命值",
+      "combat_power": 2.6,
+      "target_min": 3.0,
+      "target_max": 4.0
+    }
+  }
+];
+
+// 辅助函数
+function getCardsByPersonality(personality) {
+    return shrimpCards.filter(card => card.personality === personality);
+}
+
+function getCardsByWish(wish) {
+    return shrimpCards.filter(card => card.wish === wish);
+}
+
+function getCardsByAesthetic(aesthetic) {
+    return shrimpCards.filter(card => card.aesthetic === aesthetic);
+}
+
+function getCardsByRarity(rarity) {
+    return shrimpCards.filter(card => card.rarity === rarity);
+}
+
+// 统计信息
+function getCardStats() {
+    const stats = {
+        total: shrimpCards.length,
+        byPersonality: {},
+        byWish: {},
+        byAesthetic: {},
+        byRarity: {},
+        avgCost: 0,
+        avgAttack: 0,
+        avgHealth: 0
+    };
+    
+    let totalCost = 0;
+    let totalAttack = 0;
+    let totalHealth = 0;
+    
+    shrimpCards.forEach(card => {
+        // 统计性格
+        stats.byPersonality[card.personality] = (stats.byPersonality[card.personality] || 0) + 1;
+        
+        // 统计愿望
+        stats.byWish[card.wish] = (stats.byWish[card.wish] || 0) + 1;
+        
+        // 统计审美
+        stats.byAesthetic[card.aesthetic] = (stats.byAesthetic[card.aesthetic] || 0) + 1;
+        
+        // 统计稀有度
+        stats.byRarity[card.rarity] = (stats.byRarity[card.rarity] || 0) + 1;
+        
+        // 累计数值
+        totalCost += card.cost;
+        totalAttack += card.attack;
+        totalHealth += card.health;
+    });
+    
+    // 计算平均值
+    stats.avgCost = (totalCost / shrimpCards.length).toFixed(2);
+    stats.avgAttack = (totalAttack / shrimpCards.length).toFixed(2);
+    stats.avgHealth = (totalHealth / shrimpCards.length).toFixed(2);
+    
+    return stats;
+}

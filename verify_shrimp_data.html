@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>虾虾卡数据验证</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .card { border: 1px solid #ccc; padding: 10px; margin: 10px; border-radius: 5px; }
+        .cost { color: red; font-weight: bold; }
+        .attack { color: blue; }
+        .health { color: green; }
+        .effect { color: purple; }
+    </style>
+</head>
+<body>
+    <h1>🎴 虾虾卡数据验证页面</h1>
+    <p>检查数据是否正确加载...</p>
+    
+    <div id="result"></div>
+    
+    <script src="balanced_shrimp_cards_30hp.js"></script>
+    <script>
+        console.log("开始验证虾虾卡数据...");
+        
+        if (typeof balancedShrimpCards30HP === 'undefined') {
+            document.getElementById('result').innerHTML = '<div style="color: red;">❌ 错误: 卡牌数据未加载</div>';
+            console.error("❌ 错误: 卡牌数据未加载");
+        } else {
+            const cards = balancedShrimpCards30HP;
+            console.log(`✅ 数据加载成功: ${cards.length} 张卡牌`);
+            
+            // 查找魅力狡猾科技虾
+            const targetCards = cards.filter(card => card.name.includes("魅力狡猾科技虾"));
+            
+            let html = `<h2>🔍 找到 ${targetCards.length} 张"魅力狡猾科技虾"</h2>`;
+            
+            targetCards.forEach(card => {
+                html += `
+                <div class="card">
+                    <h3>${card.name} (ID: ${card.id})</h3>
+                    <p><span class="cost">费用: ${card.cost}</span></p>
+                    <p><span class="attack">攻击力: ${card.attack}</span></p>
+                    <p><span class="health">生命值: ${card.health}</span></p>
+                    <p><span class="effect">效果: ${card.effect}</span></p>
+                    <p>基础战斗力: ${card.base_power || 'N/A'}</p>
+                    <p>总战斗力: ${card.total_power || 'N/A'}</p>
+                    <p>性格: ${card.personality}</p>
+                </div>
+                `;
+            });
+            
+            // 显示所有卡牌的费用分布
+            const costDistribution = {};
+            cards.forEach(card => {
+                costDistribution[card.cost] = (costDistribution[card.cost] || 0) + 1;
+            });
+            
+            html += `<h2>📊 费用分布统计</h2>`;
+            html += `<table border="1" cellpadding="5">`;
+            html += `<tr><th>费用</th><th>卡牌数量</th><th>百分比</th></tr>`;
+            
+            for (const cost in costDistribution) {
+                const count = costDistribution[cost];
+                const percentage = ((count / cards.length) * 100).toFixed(1);
+                html += `<tr><td>${cost}费</td><td>${count}张</td><td>${percentage}%</td></tr>`;
+            }
+            
+            html += `</table>`;
+            
+            document.getElementById('result').innerHTML = html;
+        }
+    </script>
+</body>
+</html>

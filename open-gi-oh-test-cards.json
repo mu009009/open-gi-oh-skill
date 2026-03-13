@@ -1,0 +1,1084 @@
+{
+  "version": "1.0.0",
+  "generator": "Open-Gi-Oh! Card Generator",
+  "card_count": 50,
+  "cards": [
+    {
+      "id": 5065,
+      "name": "深渊精灵",
+      "cost": 4,
+      "attack": 4,
+      "health": 3,
+      "element": "dark",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "暗影之力的化身",
+      "combat_power": 53.4,
+      "flavor_text": "深渊的低语，诱惑着迷失的灵魂。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 4,
+        "actual_cost": 4,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 13.35
+      }
+    },
+    {
+      "id": 9539,
+      "name": "风刃元素",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "风暴之力的化身",
+      "combat_power": 9.2,
+      "flavor_text": "自由如风，迅捷如电，无人能捕捉它的轨迹。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 1,
+        "actual_cost": 1,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 9.2
+      }
+    },
+    {
+      "id": 7896,
+      "name": "气流巨龙",
+      "cost": 10,
+      "attack": 9,
+      "health": 8,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [
+        "spell_damage"
+      ],
+      "effect": "冲锋",
+      "description": "风暴之力的化身，拥有spell_damage能力",
+      "combat_power": 221.7,
+      "flavor_text": "风暴的使者，用狂风撕裂一切阻碍。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 22.169999999999998
+      }
+    },
+    {
+      "id": 7351,
+      "name": "幽暗后裔",
+      "cost": 9,
+      "attack": 8,
+      "health": 7,
+      "element": "dark",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "暗影之力的化身",
+      "combat_power": 182.6,
+      "flavor_text": "黑暗的君主，统治着阴影的国度。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 9,
+        "actual_cost": 9,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 20.288888888888888
+      }
+    },
+    {
+      "id": 4021,
+      "name": "神话的疾风刺客",
+      "cost": 3,
+      "attack": 3,
+      "health": 1,
+      "element": "wind",
+      "rarity": "SSR",
+      "abilities": [],
+      "effect": "每当本随从攻击时，抽一张牌",
+      "description": "神话般的风暴之力的化身",
+      "combat_power": 33.75,
+      "flavor_text": "自由如风，迅捷如电，无人能捕捉它的轨迹。 神话般的生物，拥有毁天灭地的力量。",
+      "balance_analysis": {
+        "expected_cost": 3,
+        "actual_cost": 3,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 11.25
+      }
+    },
+    {
+      "id": 6723,
+      "name": "传奇的水镜之灵",
+      "cost": 10,
+      "attack": 9,
+      "health": 11,
+      "element": "water",
+      "rarity": "SR",
+      "abilities": [],
+      "effect": "",
+      "description": "传奇的水流之力的化身",
+      "combat_power": 375.75,
+      "flavor_text": "水之智慧的化身，以柔克刚的典范。 传说中的存在，其力量足以改变战局。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 37.575
+      }
+    },
+    {
+      "id": 8974,
+      "name": "强力的烈焰信使",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "element": "fire",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "登场：造成1点伤害",
+      "description": "强大的火焰之力的化身",
+      "combat_power": 26.4,
+      "flavor_text": "火焰在它眼中燃烧，炽热的力量足以熔化钢铁。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 13.2
+      }
+    },
+    {
+      "id": 5596,
+      "name": "夜幕侍从",
+      "cost": 10,
+      "attack": 9,
+      "health": 8,
+      "element": "dark",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "嘲讽",
+      "description": "暗影之力的化身",
+      "combat_power": 226.4,
+      "flavor_text": "黑暗的君主，统治着阴影的国度。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 22.64
+      }
+    },
+    {
+      "id": 4878,
+      "name": "旋风哨兵",
+      "cost": 10,
+      "attack": 10,
+      "health": 10,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "风暴之力的化身",
+      "combat_power": 299.0,
+      "flavor_text": "轻盈而致命，如同无声的死亡。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 29.9
+      }
+    },
+    {
+      "id": 4815,
+      "name": "神话的山脉刺客",
+      "cost": 2,
+      "attack": 1,
+      "health": 2,
+      "element": "earth",
+      "rarity": "SSR",
+      "abilities": [
+        "taunt",
+        "deathrattle"
+      ],
+      "effect": "潜行",
+      "description": "神话般的大地之力的化身，拥有嘲讽亡语能力",
+      "combat_power": 23.45,
+      "flavor_text": "扎根于大地，汲取着星球的力量。 神话般的生物，拥有毁天灭地的力量。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 11.725
+      }
+    },
+    {
+      "id": 9932,
+      "name": "夜幕刺客",
+      "cost": 4,
+      "attack": 4,
+      "health": 3,
+      "element": "dark",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "嘲讽",
+      "description": "暗影之力的化身",
+      "combat_power": 53.4,
+      "flavor_text": "深渊的低语，诱惑着迷失的灵魂。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 4,
+        "actual_cost": 4,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 13.35
+      }
+    },
+    {
+      "id": 5246,
+      "name": "微风元素",
+      "cost": 10,
+      "attack": 9,
+      "health": 8,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "风暴之力的化身",
+      "combat_power": 221.4,
+      "flavor_text": "自由如风，迅捷如电，无人能捕捉它的轨迹。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 22.14
+      }
+    },
+    {
+      "id": 4271,
+      "name": "地脉刺客",
+      "cost": 8,
+      "attack": 7,
+      "health": 7,
+      "element": "earth",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "大地之力的化身",
+      "combat_power": 161.0,
+      "flavor_text": "山脉的守护者，拥有无可撼动的防御。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 8,
+        "actual_cost": 8,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 20.125
+      }
+    },
+    {
+      "id": 5188,
+      "name": "强力的气流帝王",
+      "cost": 5,
+      "attack": 4,
+      "health": 3,
+      "element": "wind",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "",
+      "description": "强大的风暴之力的化身",
+      "combat_power": 55.99,
+      "flavor_text": "轻盈而致命，如同无声的死亡。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 5,
+        "actual_cost": 5,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 11.198
+      }
+    },
+    {
+      "id": 5212,
+      "name": "强力的幽暗斥候",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "element": "dark",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "风怒",
+      "description": "强大的暗影之力的化身",
+      "combat_power": 10.12,
+      "flavor_text": "黑暗的君主，统治着阴影的国度。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 1,
+        "actual_cost": 1,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 10.12
+      }
+    },
+    {
+      "id": 6486,
+      "name": "强力的地脉后裔",
+      "cost": 7,
+      "attack": 5,
+      "health": 5,
+      "element": "earth",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "",
+      "description": "强大的大地之力的化身",
+      "combat_power": 101.2,
+      "flavor_text": "山脉的守护者，拥有无可撼动的防御。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 7,
+        "actual_cost": 7,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 14.457142857142857
+      }
+    },
+    {
+      "id": 3015,
+      "name": "风暴守卫",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "风暴之力的化身",
+      "combat_power": 23.0,
+      "flavor_text": "自由如风，迅捷如电，无人能捕捉它的轨迹。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 11.5
+      }
+    },
+    {
+      "id": 3733,
+      "name": "风刃信使",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "风暴之力的化身",
+      "combat_power": 9.2,
+      "flavor_text": "自由如风，迅捷如电，无人能捕捉它的轨迹。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 1,
+        "actual_cost": 1,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 9.2
+      }
+    },
+    {
+      "id": 7215,
+      "name": "强力的光明祭司",
+      "cost": 10,
+      "attack": 10,
+      "health": 9,
+      "element": "light",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "",
+      "description": "强大的光明之力的化身",
+      "combat_power": 299.86,
+      "flavor_text": "圣光普照，驱散一切黑暗与邪恶。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 29.986
+      }
+    },
+    {
+      "id": 3854,
+      "name": "山脉斥候",
+      "cost": 10,
+      "attack": 9,
+      "health": 10,
+      "element": "earth",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "大地之力的化身",
+      "combat_power": 269.3,
+      "flavor_text": "山脉的守护者，拥有无可撼动的防御。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 26.93
+      }
+    },
+    {
+      "id": 1739,
+      "name": "强力的冥府帝王",
+      "cost": 7,
+      "attack": 6,
+      "health": 5,
+      "element": "dark",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "",
+      "description": "强大的暗影之力的化身",
+      "combat_power": 119.68,
+      "flavor_text": "黑暗的君主，统治着阴影的国度。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 7,
+        "actual_cost": 7,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 17.09714285714286
+      }
+    },
+    {
+      "id": 3712,
+      "name": "强力的水灵侍从",
+      "cost": 9,
+      "attack": 7,
+      "health": 7,
+      "element": "water",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "嘲讽",
+      "description": "强大的水流之力的化身",
+      "combat_power": 184.8,
+      "flavor_text": "水之智慧的化身，以柔克刚的典范。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 9,
+        "actual_cost": 9,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 20.533333333333335
+      }
+    },
+    {
+      "id": 8144,
+      "name": "阴影德鲁伊",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "element": "dark",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "嘲讽",
+      "description": "暗影之力的化身",
+      "combat_power": 23.0,
+      "flavor_text": "深渊的低语，诱惑着迷失的灵魂。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 11.5
+      }
+    },
+    {
+      "id": 2921,
+      "name": "神话的阴影侍从",
+      "cost": 2,
+      "attack": 2,
+      "health": 1,
+      "element": "dark",
+      "rarity": "SSR",
+      "abilities": [
+        "lifesteal",
+        "windfury"
+      ],
+      "effect": "突袭",
+      "description": "神话般的暗影之力的化身，拥有吸血风怒能力",
+      "combat_power": 26.1,
+      "flavor_text": "深渊的低语，诱惑着迷失的灵魂。 神话般的生物，拥有毁天灭地的力量。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 13.05
+      }
+    },
+    {
+      "id": 1602,
+      "name": "飓风祭司",
+      "cost": 8,
+      "attack": 7,
+      "health": 6,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "风暴之力的化身",
+      "combat_power": 139.4,
+      "flavor_text": "风暴的使者，用狂风撕裂一切阻碍。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 8,
+        "actual_cost": 8,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 17.425
+      }
+    },
+    {
+      "id": 8990,
+      "name": "强力的光辉学徒",
+      "cost": 8,
+      "attack": 5,
+      "health": 7,
+      "element": "light",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "圣盾",
+      "description": "强大的光明之力的化身",
+      "combat_power": 140.8,
+      "flavor_text": "圣光普照，驱散一切黑暗与邪恶。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 8,
+        "actual_cost": 8,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 17.6
+      }
+    },
+    {
+      "id": 2093,
+      "name": "神话的山脉学徒",
+      "cost": 1,
+      "attack": 1,
+      "health": 1,
+      "element": "earth",
+      "rarity": "SSR",
+      "abilities": [
+        "spell_damage"
+      ],
+      "effect": "突袭",
+      "description": "神话般的大地之力的化身，拥有spell_damage能力",
+      "combat_power": 14.1,
+      "flavor_text": "坚如磐石，稳如泰山，大地是它永恒的盟友。 神话般的生物，拥有毁天灭地的力量。",
+      "balance_analysis": {
+        "expected_cost": 1,
+        "actual_cost": 1,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 14.1
+      }
+    },
+    {
+      "id": 5814,
+      "name": "风暴学徒",
+      "cost": 4,
+      "attack": 3,
+      "health": 3,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "嘲讽",
+      "description": "风暴之力的化身",
+      "combat_power": 41.4,
+      "flavor_text": "轻盈而致命，如同无声的死亡。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 4,
+        "actual_cost": 4,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 10.35
+      }
+    },
+    {
+      "id": 2996,
+      "name": "赤焰德鲁伊",
+      "cost": 10,
+      "attack": 11,
+      "health": 9,
+      "element": "fire",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "嘲讽",
+      "description": "火焰之力的化身",
+      "combat_power": 300.6,
+      "flavor_text": "火焰在它眼中燃烧，炽热的力量足以熔化钢铁。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 30.060000000000002
+      }
+    },
+    {
+      "id": 8363,
+      "name": "强力的寒冰信使",
+      "cost": 3,
+      "attack": 2,
+      "health": 3,
+      "element": "water",
+      "rarity": "R",
+      "abilities": [
+        "lifesteal"
+      ],
+      "effect": "剧毒",
+      "description": "强大的水流之力的化身，拥有吸血能力",
+      "combat_power": 34.82,
+      "flavor_text": "来自深渊的呼唤，掌握着生命的源泉。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 3,
+        "actual_cost": 3,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 11.606666666666667
+      }
+    },
+    {
+      "id": 3562,
+      "name": "暗影骑士",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "element": "dark",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "冲锋",
+      "description": "暗影之力的化身",
+      "combat_power": 15.8,
+      "flavor_text": "深渊的低语，诱惑着迷失的灵魂。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 1,
+        "actual_cost": 1,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 15.8
+      }
+    },
+    {
+      "id": 4850,
+      "name": "岩石哨兵",
+      "cost": 8,
+      "attack": 6,
+      "health": 7,
+      "element": "earth",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "大地之力的化身",
+      "combat_power": 139.4,
+      "flavor_text": "坚如磐石，稳如泰山，大地是它永恒的盟友。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 8,
+        "actual_cost": 8,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 17.425
+      }
+    },
+    {
+      "id": 3120,
+      "name": "激流巨龙",
+      "cost": 6,
+      "attack": 4,
+      "health": 5,
+      "element": "water",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "嘲讽",
+      "description": "水流之力的化身",
+      "combat_power": 78.0,
+      "flavor_text": "来自深渊的呼唤，掌握着生命的源泉。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 6,
+        "actual_cost": 6,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 13.0
+      }
+    },
+    {
+      "id": 9727,
+      "name": "微风之灵",
+      "cost": 7,
+      "attack": 6,
+      "health": 5,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "风暴之力的化身",
+      "combat_power": 105.3,
+      "flavor_text": "自由如风，迅捷如电，无人能捕捉它的轨迹。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 7,
+        "actual_cost": 7,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 15.042857142857143
+      }
+    },
+    {
+      "id": 1763,
+      "name": "强力的爆炎元素",
+      "cost": 5,
+      "attack": 3,
+      "health": 4,
+      "element": "fire",
+      "rarity": "R",
+      "abilities": [
+        "charge"
+      ],
+      "effect": "",
+      "description": "强大的火焰之力的化身，拥有冲锋能力",
+      "combat_power": 64.82,
+      "flavor_text": "火焰在它眼中燃烧，炽热的力量足以熔化钢铁。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 5,
+        "actual_cost": 5,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 12.963999999999999
+      }
+    },
+    {
+      "id": 1108,
+      "name": "强力的闪耀使者",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "element": "light",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "",
+      "description": "强大的光明之力的化身",
+      "combat_power": 25.3,
+      "flavor_text": "希望的化身，为世界带来光明。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 12.65
+      }
+    },
+    {
+      "id": 3335,
+      "name": "强力的风刃信使",
+      "cost": 3,
+      "attack": 3,
+      "health": 2,
+      "element": "wind",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "",
+      "description": "强大的风暴之力的化身",
+      "combat_power": 33.66,
+      "flavor_text": "自由如风，迅捷如电，无人能捕捉它的轨迹。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 3,
+        "actual_cost": 3,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 11.219999999999999
+      }
+    },
+    {
+      "id": 4309,
+      "name": "传奇的沙暴领主",
+      "cost": 2,
+      "attack": 1,
+      "health": 2,
+      "element": "earth",
+      "rarity": "SR",
+      "abilities": [
+        "charge",
+        "spell_damage"
+      ],
+      "effect": "剧毒",
+      "description": "传奇的大地之力的化身，拥有冲锋spell_damage能力",
+      "combat_power": 19.73,
+      "flavor_text": "山脉的守护者，拥有无可撼动的防御。 传说中的存在，其力量足以改变战局。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 9.865
+      }
+    },
+    {
+      "id": 7575,
+      "name": "空气女皇",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "element": "wind",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "风暴之力的化身",
+      "combat_power": 23.0,
+      "flavor_text": "自由如风，迅捷如电，无人能捕捉它的轨迹。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 11.5
+      }
+    },
+    {
+      "id": 6593,
+      "name": "强力的暗影猎手",
+      "cost": 10,
+      "attack": 10,
+      "health": 10,
+      "element": "dark",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "",
+      "description": "强大的暗影之力的化身",
+      "combat_power": 328.9,
+      "flavor_text": "暗影中的猎手，悄无声息地接近猎物。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 32.89
+      }
+    },
+    {
+      "id": 8356,
+      "name": "地脉战士",
+      "cost": 7,
+      "attack": 5,
+      "health": 6,
+      "element": "earth",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "冲锋",
+      "description": "大地之力的化身",
+      "combat_power": 105.3,
+      "flavor_text": "扎根于大地，汲取着星球的力量。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 7,
+        "actual_cost": 7,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 15.042857142857143
+      }
+    },
+    {
+      "id": 8577,
+      "name": "水灵德鲁伊",
+      "cost": 1,
+      "attack": 1,
+      "health": 2,
+      "element": "water",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "嘲讽",
+      "description": "水流之力的化身",
+      "combat_power": 15.0,
+      "flavor_text": "水之智慧的化身，以柔克刚的典范。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 1,
+        "actual_cost": 1,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 15.0
+      }
+    },
+    {
+      "id": 9942,
+      "name": "传奇的疾风巨兽",
+      "cost": 10,
+      "attack": 9,
+      "health": 8,
+      "element": "wind",
+      "rarity": "SR",
+      "abilities": [
+        "divine_shield",
+        "poisonous"
+      ],
+      "effect": "圣盾",
+      "description": "传奇的风暴之力的化身，拥有圣盾剧毒能力",
+      "combat_power": 278.25,
+      "flavor_text": "轻盈而致命，如同无声的死亡。 传说中的存在，其力量足以改变战局。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 27.825
+      }
+    },
+    {
+      "id": 5847,
+      "name": "强力的黑暗法师",
+      "cost": 10,
+      "attack": 10,
+      "health": 10,
+      "element": "dark",
+      "rarity": "R",
+      "abilities": [
+        "charge"
+      ],
+      "effect": "",
+      "description": "强大的暗影之力的化身，拥有冲锋能力",
+      "combat_power": 329.7,
+      "flavor_text": "暗影中的猎手，悄无声息地接近猎物。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 32.97
+      }
+    },
+    {
+      "id": 9848,
+      "name": "传奇的巨石使者",
+      "cost": 2,
+      "attack": 1,
+      "health": 2,
+      "element": "earth",
+      "rarity": "SR",
+      "abilities": [
+        "divine_shield",
+        "poisonous"
+      ],
+      "effect": "圣盾",
+      "description": "传奇的大地之力的化身，拥有圣盾剧毒能力",
+      "combat_power": 20.12,
+      "flavor_text": "山脉的守护者，拥有无可撼动的防御。 传说中的存在，其力量足以改变战局。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 10.06
+      }
+    },
+    {
+      "id": 7069,
+      "name": "炎魔德鲁伊",
+      "cost": 6,
+      "attack": 4,
+      "health": 5,
+      "element": "fire",
+      "rarity": "N",
+      "abilities": [],
+      "effect": "",
+      "description": "火焰之力的化身",
+      "combat_power": 85.2,
+      "flavor_text": "来自熔岩核心的使者，掌握着毁灭之力。 一张基础卡牌，但已展现出不凡的潜力。",
+      "balance_analysis": {
+        "expected_cost": 6,
+        "actual_cost": 6,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 14.200000000000001
+      }
+    },
+    {
+      "id": 2465,
+      "name": "强力的夜幕战士",
+      "cost": 8,
+      "attack": 7,
+      "health": 6,
+      "element": "dark",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "吸血",
+      "description": "强大的暗影之力的化身",
+      "combat_power": 157.74,
+      "flavor_text": "黑暗的君主，统治着阴影的国度。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 8,
+        "actual_cost": 8,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 19.7175
+      }
+    },
+    {
+      "id": 2909,
+      "name": "强力的闪耀信使",
+      "cost": 2,
+      "attack": 2,
+      "health": 2,
+      "element": "light",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "",
+      "description": "强大的光明之力的化身",
+      "combat_power": 25.3,
+      "flavor_text": "神圣不可侵犯，正义的终极体现。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 2,
+        "actual_cost": 2,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 12.65
+      }
+    },
+    {
+      "id": 4224,
+      "name": "强力的虚空精灵",
+      "cost": 6,
+      "attack": 5,
+      "health": 4,
+      "element": "dark",
+      "rarity": "R",
+      "abilities": [],
+      "effect": "",
+      "description": "强大的暗影之力的化身",
+      "combat_power": 86.68,
+      "flavor_text": "黑暗的君主，统治着阴影的国度。 经过精心训练的战士，在战场上证明了自己的价值。",
+      "balance_analysis": {
+        "expected_cost": 6,
+        "actual_cost": 6,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 14.446666666666667
+      }
+    },
+    {
+      "id": 5469,
+      "name": "神话的风暴祭司",
+      "cost": 10,
+      "attack": 10,
+      "health": 10,
+      "element": "wind",
+      "rarity": "SSR",
+      "abilities": [
+        "lifesteal"
+      ],
+      "effect": "攻击时：获得2点护甲",
+      "description": "神话般的风暴之力的化身，拥有吸血能力",
+      "combat_power": 449.0,
+      "flavor_text": "风暴的使者，用狂风撕裂一切阻碍。 神话般的生物，拥有毁天灭地的力量。",
+      "balance_analysis": {
+        "expected_cost": 10,
+        "actual_cost": 10,
+        "balance_score": 100,
+        "rating": "完美平衡",
+        "efficiency": 44.9
+      }
+    }
+  ]
+}

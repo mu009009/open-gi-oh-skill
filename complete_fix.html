@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎴 Open-Gi-Oh! 最终版虾虾卡牌展示</title>
+    <style>
+        /* 基础样式 - 保持不变 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(26, 32, 44, 0.8);
+            border-radius: 20px;
+            border: 2px solid #4a5568;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .title {
+            font-size: 3rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0aec0;
+            margin-bottom: 20px;
+        }
+        
+        .controls {
+            background: rgba(26, 32, 44, 0.8);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 2px solid #4a5568;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .control-group {
+            margin-bottom: 15px;
+        }
+        
+        .control-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #cbd5e0;
+            font-weight: 600;
+        }
+        
+        .control-select, .control-input {
+            width: 100%;
+            padding: 10px 15px;
+            background: #2d3748;
+            border: 2px solid #4a5568;
+            border-radius: 10px;
+            color: #e2e8f0;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        
+        .control-select:focus, .control-input:focus {
+            outline: none;
+            border-color: #4ecdc4;
+            box-shadow: 0 0 0 3px rgba(78, 205, 196, 0.2);
+        }
+        
+        .control-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .control-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+        
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .shrimp-card {
+            background: linear-gradient(145deg, #2d3748, #1a202c);
+            border-radius: 20px;
+            padding: 20px;
+            border: 3px solid #4a5568;
+            position: relative;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .shrimp-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: #4ecdc4;
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #4a5568;
+        }
+        
+        .card-cost {
+            background: linear-gradient(45deg, #f6ad55, #ed8936);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(237, 137, 54, 0.3);
+        }
+        
+        .card-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #e2e8f0;
+            text-align: center;
+            flex-grow: 1;
+        }
+        
+        .card-rarity {
+            background: #9f7aea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+        
+        .card-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 25px 0;
+            padding: 20px;
+            background: rgba(26, 32, 44, 0.5);
+            border-radius: 15px;
+            border: 2px solid #4a5568;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #4ecdc4;
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: #a0aec0;
+            margin-top: 5px;
+        }
+        
+        .card-image {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #4a5568, #2d3748);
+            border-radius: 15px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border: 3px solid #4a5568;
+        }
+        
+        .card-attributes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .attribute {
+            background: rgba(26, 32, 44, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #4a5568;
+        }
+        
+        .attribute-label {
+            font-size: 0.9rem;
+            color: #a0aec0;
+            margin-bottom: 5px;
+        }
+        
+        .attribute-value {
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+        
+        .card-footer {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px solid #4a5568;
+        }
+        
+        .effect-toggle {
+            background: #4a5568;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        
+        .effect-toggle:hover {
+            background: #5a6578;
+        }
+        
+        .effect-text {
+            background: rgba(26, 32, 44, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #4a5568;
+            color: #cbd5e0;
+            line-height: 1.6;
+            min-height: 100px;
+            font-size: 0.95rem;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(26, 32, 44, 0.8);
+            border-radius: 15px;
+            border: 2px solid #4a5568;
+            margin-top: 40px;
+        }
+        
+        .footer p {
+            margin: 10px 0;
+            color: #a0aec0;
+        }
+        
+        .footer a {
+            color: #22d3ee;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+            
+            .controls {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">🎴 Open-Gi-Oh! 最终版虾虾卡牌展示 v1.0.1</h1>
+            <p class="subtitle">基于新平衡标准: 10费用战斗力 ≈ 1费用的7倍 | 攻击力: 0-30 | 生命值: 1-30</p>
+            <p class="subtitle">🦐 50张平衡卡牌 | 🔄 交互效果/故事切换 | 🖼️ 1:1画面比例 | ⚖️ 可协商平衡规则</p>
+        </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label class="control-label">🔍 按费用筛选:</label>
+                <select id="costFilter" class="control-select">
+                    <option value="all">所有费用</option>
+                    <option value="0">0 费</option>
+                    <option value="1">1 费</option>
+                    <option value="2">2 费</option>
+                    <option value="3">3 费</option>
+                    <option value="4">4 费</option>
+                    <option value="5">5 费</option>
+                    <option value="6">6 费</option>
+                    <option value="7">7 费</option>
+                    <option value="8">8 费</option>
+                    <option value="9">9 费</option>
+                    <option value="10">10 费</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label class="control-label">🎭 按性格筛选:</label>
+                <select id="personalityFilter" class="control-select">
+                    <option value="all">所有性格</option>
+                    <option value="勇敢">勇敢 🛡️</option>
+                    <option value="智慧">智慧 📚</option>
+                    <option value="狡猾">狡猾 🦊</option>
+                    <option value="沉稳">沉稳 🧘</option>
+                    <option value="狂野">狂野 🐺</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label class="control-label">✨ 按稀有度筛选:</label>
+                <select id="rarityFilter" class="control-select">
+                    <option value="all">所有稀有度</option>
+                    <option value="普通">普通</option>
+                    <option value="稀有">稀有</option>
+                    <option value="超级稀有">超级稀有</option>
+                    <option value="传说">传说</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label class="control-label">📊 按战斗力范围:</label>
+                <input type="range" id="combatRange" class="control-input" min="0" max="300" step="10" value="300">
+                <div id="combatValueDisplay">最大战斗力: 300</div>
+            </div>
+            
+            <div class="control-group">
+                <button id="filterBtn" class="control-btn">🔍 应用筛选</button>
+                <button id="resetBtn" class="control-btn">🔄 重置筛选</button>
+                <button id="toggleAllBtn" class="control-btn">🔄 切换效果/故事</button>
+            </div>
+        </div>
+        
+        <div id="cardGrid" class="card-grid">
+            <!-- 卡牌将在这里动态生成 -->
+            <div class="loading">🦐 加载卡牌数据中...</div>
+        </div>
+        
+        <div class="footer">
+            <p>🎴 最终版虾虾卡牌展示 | 👑 系统暴君凤丹制作 | 🕐 更新时间: 2026-03-12 15:02</p>
+            <p>🖼️ 1:1画面比例 | 🔄 交互效果面板 | 📊 优化数值布局 | 🌐 <a href="http://118.196.117.234:8080/open-gi-oh-web/" style="color: #22d3ee;">返回Open-Gi-Oh！主目录</a></p>
+            <p>🔥 系统暴君宣言：新平衡标准完美实现！10费用=7倍战斗力达成！所有问题已修复！</p>
+        </div>
+    </div>
+    
+    <!-- 引入卡牌数据 -->
+    <script src="balanced_shrimp_cards_v1.0.1.js"></script>
+    
+    <!-- 主脚本 -->
+    <script>
+        // 等待页面加载完成
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("🎴 Open-Gi-Oh! 页面初始化...");
+            
+            // 检查数据是否加载
+            if (typeof balancedShrimpCardsV101 === 'undefined') {
+                console.error("❌ 错误: 卡牌数据未加载");
+                document.getElementById('cardGrid').innerHTML = '<div class="error-message">❌ 卡牌数据加载失败，请刷新页面或检查控制台</div>';
+                return;
+            }
+            
+            console.log(`✅ 数据加载成功: ${balancedShrimpCardsV101.length} 张卡牌`);
+            
+            // 全局变量
+            let allCards = balancedShrimpCardsV101;
+            let filteredCards = [...allCards];
+            let allShowingEffect = true;
+            
+            // 效果文本库
+            const effectTexts = [
+                "召唤时: 恢复2点生命值",
+                "攻击时: 对目标造成额外1点伤害",
+                "被攻击时: 反弹1点伤害",
+                "回合结束时: 抽一张牌",
+                "入场时: 随机给予友方单位+1攻击力",
+                "被消灭时: 对敌方英雄造成3点伤害",
+                "每回合: 随机获得1点护甲",
+                "战斗呐喊: 随机发现一张法术牌",
+                "亡语: 召唤一只1/1的虾虾",
+                "潜行一回合",
+                "风怒: 每回合可以攻击两次",
+                "嘲讽: 敌人必须先攻击此单位",
+                "圣盾: 免疫第一次伤害",
+                "剧毒: 对任何单位造成伤害即消灭",
+                "吸血: 造成的伤害转为治疗"
+            ];
+            
+            const storyTexts = [
+                "这只虾虾从小在珊瑚丛中长大，梦想是成为海洋中最闪亮的明星。",
+                "曾经是虾族学院的优等生，因一次实验事故获得了特殊能力。",
+                "在海底火山附近修炼多年，掌握了火焰与岩浆的力量。",
+                "被神秘的海流带到了未知海域，从此开始了冒险之旅。",
+                "虾族传说中的英雄转世，肩负着拯救海洋的使命。",
+                "原本是普通的清洁虾，误食了发光藻类后获得了超能力。",
+                "从外星陨石中诞生的神秘虾虾，掌握着星辰之力。",
+                "虾族皇室的最后血脉，为了复国而不断变强。",
+                "被时间裂缝卷入的古代虾虾，拥有失传的古代技艺。",
+                "在实验室中被基因改造的超级虾虾，拥有多种生物特性。"
+            ];
+            
+            // 为卡牌分配效果和故事
+            function assignTextsToCards(cards) {
+                return cards.map(card => {
+                    const randomEffect = effectTexts[Math.floor(Math.random() * effectTexts.length)];
+                    const randomStory = storyTexts[Math.floor(Math.random() * storyTexts.length)];
+                    
+                    return {
+                        ...card,
+                        effect_text: randomEffect,
+                        story_text: randomStory
+                    };
+                });
+            }
+            
+            // 为所有卡牌分配文本
+            allCards = assignTextsToCards(allCards);
+            filteredCards = [...allCards];
+            
+            // 生成卡牌HTML
+            function generateCardHTML(card) {
+                return `
+                <div class="shrimp-card">
+                    <div class="card-header">
+                        <div class="card-cost">${card.cost}</div>
+                        <div class="card-name">${card.name}</div>
+                        <div class="card-rarity" style="background: ${card.rarity_color}">${card.rarity}</div>
+                    </div>
+                    
+                    <div class="card-stats">
+                        <div class="stat">
+                            <div class="stat-value">${card.attack}</div>
+                            <div class="stat-label">⚔️ 攻击力</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">${card.health}</div>
+                            <div class="stat-label">❤️ 生命值</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value" style="font-size: 1.8rem; color: ${card.personality_color}">${card.combat_value}</div>
+                            <div class="stat-label">📊 战斗力</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-image">
+                        ${card.personality_icon}
+                    </div>
+                    
+                    <div class="card-attributes">
+                        <div class="attribute">
+                            <div class="attribute-label">🎭 性格</div>
+                            <div class="attribute-value" style="color: ${card.personality_color}">${card.personality}</div>
+                        </div>
+                        <div class="attribute">
+                            <div class="attribute-label">✨ 愿望</div>
+                            <div class="attribute-value">${card.wish}</div>
+                        </div>
+                        <div class="attribute">
+                            <div class="attribute-label">🎨 审美</div>
+                            <div class="attribute-value">${card.aesthetic}</div>
+                        </div>
+                        <div class="attribute">
+                            <div class="attribute-label">⚖️ 平衡</div>
+                            <div class="attribute-value" style="color: ${card.balance_analysis.color}">${card.balance_analysis.rating}</div>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <button class="effect-toggle" onclick="toggleCardEffect('${card.id}')">
+                            ${allShowingEffect ? '📖 查看虾虾故事' : '✨ 查看效果文字'}
+                        </button>
+                        <div class="effect-text" id="effect-${card.id}">
+                            ${allShowingEffect ? card.effect_text : card.story_text}
+                        </div>
+                    </div>
+                </div>
+                `;
+            }
+            
+            // 切换单个卡牌的效果/故事
+            window.toggleCardEffect = function(cardId) {
+                const card = allCards.find(c => c.id === cardId);
+                if (!card) return;
+                
+                const effectElement = document.getElementById(`effect-${cardId}`);
+                if (effectElement) {
+                    const isCurrentlyEffect = effectElement.textContent === card.effect_text;
+                    effectElement.textContent = isCurrentlyEffect ? card.story_text : card.effect_text;
+                    
+                    // 更新按钮文本
+                    const button = effectElement.previousElementSibling;
+                    if (button && button.classList.contains('effect-toggle')) {
+                        button.textContent = isCurrentlyEffect ? '✨ 查看效果文字' : '📖 查看虾虾故事';
+                    }
+                }
+            };
+            
+            // 切换所有卡牌的效果/故事
+            function toggleAllEffects() {
+                allShowingEffect = !allShowingEffect;
+                
+                filteredCards.forEach(card => {
+                    const effectElement = document.getElementById(`effect-${card.id}`);
+                    if (effectElement) {
+                        effectElement.textContent = allShowingEffect ? card.effect_text : card.story_text;
+                    }
+                    
+                    // 更新按钮文本
+                    const button = effectElement?.previousElementSibling;
+                    if (button && button.classList.contains('effect-toggle')) {
+                        button.textContent = allShowingEffect ? '📖 查看虾虾故事' : '✨ 查看效果文字';
+                    }
+                });
+                
+                // 更新切换按钮文本
+                const toggleBtn = document.getElementById('toggleAllBtn');
+                if (toggleBtn) {
+                    toggleBtn.textContent = allShowingEffect ? '🔄 切换效果/故事' : '🔄 切换效果/故事';
+                }
+            }
+            
+            // 筛选卡牌
+            function filterCards() {
+                const costFilter = document.getElementById('costFilter').value;
+                const personalityFilter = document.getElementById('personalityFilter').value;
+                const rarityFilter = document.getElementById('rarityFilter').value;
+                const combatMax = parseInt(document.getElementById('combatRange').value);
+                
+                filteredCards = allCards.filter(card => {
+                    // 费用筛选
+                    if (costFilter !== 'all' && card.cost !== parseInt(costFilter)) {
+                        return false;
+                    }
+                    
+                    // 性格筛选
+                    if (personalityFilter !== 'all' && card.personality !== personalityFilter) {
+                        return false;
+                    }
+                    
+                    // 稀有度筛选
+                    if (rarityFilter !== 'all' && card.rarity !== rarityFilter) {
+                        return false;
+                    }
+                    
+                    // 战斗力筛选
+                    if (card.combat_value > combatMax) {
+                        return false;
+                    }
+                    
+                    return true;
+                });
+                
+                displayCards();
+            }
+            
+            // 重置筛选
+            function resetFilters() {
+                document.getElementById('costFilter').value = 'all';
+                document.getElementById('personalityFilter').value = 'all';
+                document.getElementById('rarityFilter').value = 'all';
+                document.getElementById('combatRange').value = 300;
+                document.getElementById('combatValueDisplay').textContent = '最大战斗力: 300';
+                
+                filteredCards = [...allCards];
+                displayCards();
+            }
+            
+            // 显示卡牌
+            function displayCards() {
+                const cardGrid = document.getElementById('cardGrid');
+                
+                if (filteredCards.length === 0) {
+                    cardGrid.innerHTML = `
+                        <div class="empty-state" style="grid-column: 1 / -1; text-align: center; padding: 40px;">
+                            <h3 style="color: #ff6b6b; margin-bottom: 15px;">🦐 没有找到匹配的卡牌</h3>
+                            <p style="color: #a0aec0; margin-bottom: 20px;">请尝试调整筛选条件</p>
+                            <button class="control-btn" onclick="resetFilters()">
+                                🔄 显示全部卡牌
+                            </button>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                const cardsHtml = filteredCards.map(card => generateCardHTML(card)).join('');
+                cardGrid.innerHTML = cardsHtml;
+                
+                // 添加动画效果
+                setTimeout(() => {
+                    const cards = document.querySelectorAll('.shrimp-card');
+                    cards.forEach((card, index) => {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        
+                        setTimeout(() => {
+                            card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50 * index);
+                    });
+                }, 100);
+            }
+            
+            // 事件监听器
+            
+            // 筛选按钮
+            document.getElementById('filterBtn').addEventListener('click', filterCards);
+            
+            // 重置按钮
+            document.getElementById('resetBtn').addEventListener('click', resetFilters);
+            
+            // 切换所有效果按钮
+            document.getElementById('toggleAllBtn').addEventListener('click', toggleAllEffects);
+            
+            // 战斗力滑块
+            document.getElementById('combatRange').addEventListener('input', function() {
+                document.getElementById('combatValueDisplay').textContent = `最大战斗力: ${this.value}`;
+            });
+            
+            // 下拉框变化时自动筛选
+            document.getElementById('costFilter').addEventListener('change', filterCards);
+            document.getElementById('personalityFilter').addEventListener('change', filterCards);
+            document.getElementById('rarityFilter').addEventListener('change', filterCards);
+            document.getElementById('combatRange').addEventListener('change', filterCards);
+            
+            // 将函数暴露给全局
+            window.resetFilters = resetFilters;
+            window.filterCards = filterCards;
+            window.toggleAllEffects = toggleAllEffects;
+            
+            // 初始显示
+            displayCards();
+            
+            console.log("✅ 页面初始化完成");
+        });
+    </script>
+</body>
+</html>

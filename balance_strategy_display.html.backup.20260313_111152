@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Open-Gi-Oh! 平衡策略展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: linear-gradient(90deg, #f97316, #eab308, #22d3ee);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            border-radius: 15px;
+            border: 2px solid rgba(34, 211, 238, 0.3);
+        }
+        
+        .header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+        
+        .header .subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 5px;
+        }
+        
+        .header .version {
+            font-size: 1rem;
+            color: #64748b;
+            font-style: italic;
+        }
+        
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .strategy-card {
+            background: rgba(30, 41, 59, 0.9);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(100, 116, 139, 0.3);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            border-color: #22d3ee;
+        }
+        
+        .card-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid rgba(34, 211, 238, 0.2);
+        }
+        
+        .card-icon {
+            font-size: 2rem;
+            margin-right: 15px;
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #22d3ee;
+        }
+        
+        .card-subtitle {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+        
+        .strategy-content {
+            margin-bottom: 20px;
+        }
+        
+        .strategy-item {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .strategy-item:before {
+            content: "•";
+            color: #f97316;
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+        }
+        
+        .strategy-rule {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border-left: 4px solid;
+        }
+        
+        .rule-fixed {
+            border-left-color: #10b981;
+        }
+        
+        .rule-negotiable {
+            border-left-color: #f59e0b;
+        }
+        
+        .rule-prohibited {
+            border-left-color: #ef4444;
+        }
+        
+        .rule-label {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        
+        .label-fixed {
+            background: rgba(16, 185, 129, 0.2);
+            color: #10b981;
+        }
+        
+        .label-negotiable {
+            background: rgba(245, 158, 11, 0.2);
+            color: #f59e0b;
+        }
+        
+        .label-prohibited {
+            background: rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+        }
+        
+        .cost-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: rgba(15, 23, 42, 0.5);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .cost-table th {
+            background: rgba(34, 211, 238, 0.2);
+            color: #22d3ee;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        .cost-table td {
+            padding: 10px 12px;
+            border-bottom: 1px solid rgba(100, 116, 139, 0.3);
+        }
+        
+        .cost-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .cost-table tr:hover {
+            background: rgba(34, 211, 238, 0.1);
+        }
+        
+        .effect-table {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .effect-item {
+            background: rgba(15, 23, 42, 0.5);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(100, 116, 139, 0.3);
+        }
+        
+        .effect-name {
+            font-weight: 600;
+            color: #f97316;
+            margin-bottom: 5px;
+        }
+        
+        .effect-value {
+            color: #22d3ee;
+            font-size: 1.1rem;
+        }
+        
+        .effect-desc {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            margin-top: 5px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(145deg, rgba(34, 211, 238, 0.1), rgba(249, 115, 22, 0.1));
+            border: 2px solid rgba(34, 211, 238, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+        }
+        
+        .highlight-title {
+            font-size: 1.3rem;
+            color: #eab308;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .highlight-title:before {
+            content: "🔥";
+            margin-right: 10px;
+        }
+        
+        .system-declaration {
+            background: linear-gradient(145deg, rgba(249, 115, 22, 0.1), rgba(234, 179, 8, 0.1));
+            border: 2px solid rgba(249, 115, 22, 0.3);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        .declaration-title {
+            font-size: 1.5rem;
+            color: #f97316;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        
+        .declaration-text {
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            line-height: 1.8;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(100, 116, 139, 0.3);
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .nav-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: rgba(34, 211, 238, 0.2);
+            color: #22d3ee;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(34, 211, 238, 0.3);
+        }
+        
+        .nav-btn:hover {
+            background: rgba(34, 211, 238, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .strategy-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .effect-table {
+                grid-template-columns: 1fr;
+            }
+        }
+        /* 新添加的样式 - 计算公式卡片 */
+        .formula-section {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 页头 -->
+        <div class="header">
+            <h1>🎯 Open-Gi-Oh! 平衡策略展示</h1>
+            <div class="subtitle">系统暴君平衡策略思维链 v1.0</div>
+            <div class="version">玩家血量: 30 | 创建时间: 2026-03-12 23:15</div>
+        </div>
+        
+        <!-- 策略网格 -->
+        <div class="strategy-grid">
+            
+            <!-- 固定规则卡片 -->
+            <div class="strategy-card">
+                <div class="card-header">
+                    <div class="card-icon">🔒</div>
+                    <div>
+                        <div class="card-title">固定规则 (不可协商)</div>
+                        <div class="card-subtitle">所有Agent必须遵守的核心原则</div>
+                    </div>
+                </div>
+                <div class="strategy-content">
+                    <div class="strategy-rule rule-fixed">
+                        <span class="rule-label label-fixed">固定规则</span>
+                        <strong>相同战斗力必须对应相同费用</strong>
+                    </div>
+                    <div class="strategy-item">禁止：战斗力相同但费用不同</div>
+                    <div class="strategy-item">允许：不同愿望/性格/审美有不同战斗力计算公式</div>
+                    <div class="strategy-item">但费用转化关系必须一致</div>
+                    
+                    <div class="strategy-rule rule-fixed" style="margin-top: 20px;">
+                        <span class="rule-label label-fixed">固定规则</span>
+                        <strong>交换能力合理范围</strong>
+                    </div>
+                    <div class="strategy-item">基础合理：同费用卡牌交换同费用卡牌</div>
+                    <div class="strategy-item">允许范围：最多交换比自己高1费用的卡牌</div>
+                    <div class="strategy-item">禁止：1费卡交换3费卡（过度赚取）</div>
+                    
+                    <div class="strategy-rule rule-fixed" style="margin-top: 20px;">
+                        <span class="rule-label label-fixed">固定规则</span>
+                        <strong>特殊胜利条件</strong>
+                    </div>
+                    <div class="strategy-item">特殊胜利必须比常规胜利更难</div>
+                    <div class="strategy-item">禁止：特殊胜利比常规胜利更容易</div>
+                </div>
+            </div>
+            
+            <!-- 可协商规则卡片 -->
+            <div class="strategy-card">
+                <div class="card-header">
+                    <div class="card-icon">🤝</div>
+                    <div>
+                        <div class="card-title">可协商规则</div>
+                        <div class="card-subtitle">在边界内允许调整</div>
+                    </div>
+                </div>
+                <div class="strategy-content">
+                    <div class="strategy-rule rule-negotiable">
+                        <span class="rule-label label-negotiable">可协商</span>
+                        <strong>效果价值调整</strong>
+                    </div>
+                    <div class="strategy-item">允许：调整效果价值（±10%）</div>
+                    <div class="strategy-item">如：剧毒从5费调整为4.5-5.5费</div>
+                    
+                    <div class="strategy-rule rule-negotiable" style="margin-top: 20px;">
+                        <span class="rule-label label-negotiable">可协商</span>
+                        <strong>计算公式系数</strong>
+                    </div>
+                    <div class="strategy-item">允许：微调战斗力计算公式系数（±20%）</div>
+                    <div class="strategy-item">如：攻击系数从1.0调整为0.8-1.2</div>
+                    
+                    <div class="strategy-rule rule-negotiable" style="margin-top: 20px;">
+                        <span class="rule-label label-negotiable">可协商</span>
+                        <strong>新增效果类型</strong>
+                    </div>
+                    <div class="strategy-item">允许：增加新的效果类型</div>
+                    <div class="strategy-item">要求：需提供明确的价值评估</div>
+                    
+                    <div class="strategy-rule rule-prohibited" style="margin-top: 20px;">
+                        <span class="rule-label label-prohibited">禁止</span>
+                        <strong>禁止协商的边界</strong>
+                    </div>
+                    <div class="strategy-item">禁止：改变费用-战斗力核心关系</div>
+                    <div class="strategy-item">禁止：让低费卡过度赚取</div>
+                    <div class="strategy-item">禁止：特殊胜利比常规胜利容易</div>
+                </div>
+            </div>
+            
+            <!-- 费用-战斗力转换表卡片 -->
+            <div class="strategy-card">
+                <div class="card-header">
+                    <div class="card-icon">💰</div>
+                    <div>
+                        <div class="card-title">费用-战斗力转换表</div>
+                        <div class="card-subtitle">基于30血量重新校准</div>
+                    </div>
+                </div>
+                <div class="strategy-content">
+                    <table class="cost-table">
+                        <thead>
+                            <tr>
+                                <th>费用</th>
+                                <th>战斗力范围</th>
+                                <th>类别</th>
+                                <th>交换限制</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>0费</strong></td>
+                                <td>4-6</td>
+                                <td>工具牌</td>
+                                <td>只能交换0-1费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>1费</strong></td>
+                                <td>4-7</td>
+                                <td>前期牌</td>
+                                <td>最多交换2费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2费</strong></td>
+                                <td>6-9</td>
+                                <td>前期牌</td>
+                                <td>最多交换3费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3费</strong></td>
+                                <td>8-13</td>
+                                <td>前期牌</td>
+                                <td>最多交换4费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4费</strong></td>
+                                <td>12-18</td>
+                                <td>中期牌</td>
+                                <td>最多交换5费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5费</strong></td>
+                                <td>16-24</td>
+                                <td>中期牌</td>
+                                <td>最多交换6费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>6费</strong></td>
+                                <td>20-31</td>
+                                <td>中期牌</td>
+                                <td>最多交换7费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>7费</strong></td>
+                                <td>26-39</td>
+                                <td>后期牌</td>
+                                <td>最多交换8费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>8费</strong></td>
+                                <td>32-49</td>
+                                <td>后期牌</td>
+                                <td>最多交换9费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>9费</strong></td>
+                                <td>40-60</td>
+                                <td>后期牌</td>
+                                <td>最多交换10费卡</td>
+                            </tr>
+                            <tr>
+                                <td><strong>10费</strong></td>
+                                <td>48-72</td>
+                                <td>终结牌</td>
+                                <td>应有终结游戏能力</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="strategy-item" style="margin-top: 15px; font-size: 0.9rem; color: #94a3b8;">
+                        * 基于30血量，游戏长度7-10回合，平均每回合费用3-5，10费战斗力是0费的12倍
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 愿望-性格-审美计算公式卡片 -->
+            <div class="strategy-card">
+                <div class="card-header">
+                    <div class="card-icon">🧬</div>
+                    <div>
+                        <div class="card-title">愿望-性格-审美计算公式</div>
+                        <div class="card-subtitle">属性组合决定战斗力</div>
+                    </div>
+                </div>
+                <div class="strategy-content">
+                    <div class="formula-section">
+                        <h4>核心计算公式：</h4>
+                        <div class="formula-box">
+                            战斗力 = base_multiplier × (attack_mult × 攻击力 + health_mult × 生命值)
+                        </div>
+                        
+                        <div class="formula-explanation">
+                            <div class="explanation-item">
+                                <strong>base_multiplier</strong>：基础比例系数<br>
+                                <span class="formula-detail">由愿望+性格+审美组合决定，范围：0.9-1.2</span>
+                            </div>
+                            <div class="explanation-item">
+                                <strong>attack_mult</strong>：攻击力乘数<br>
+                                <span class="formula-detail">性格偏攻击型时较高（勇敢≈1.1，智慧≈0.9）</span>
+                            </div>
+                            <div class="explanation-item">
+                                <strong>health_mult</strong>：生命值乘数<br>
+                                <span class="formula-detail">性格偏防御型时较高（勇敢≈0.9，智慧≈1.1）</span>
+                            </div>
+                        </div>
+                        
+                        <h4 style="margin-top: 20px;">示例组合：</h4>
+                        <div class="example-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>组合</th>
+                                        <th>base_mult</th>
+                                        <th>attack_mult</th>
+                                        <th>health_mult</th>
+                                        <th>总系数</th>
+                                        <th>示例(10/10)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>神秘_勇敢_梦幻</td>
+                                        <td>1.05</td>
+                                        <td>1.10</td>
+                                        <td>0.90</td>
+                                        <td>1.087</td>
+                                        <td>21.7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>神秘_智慧_酷炫</td>
+                                        <td>1.05</td>
+                                        <td>0.90</td>
+                                        <td>1.10</td>
+                                        <td>1.139</td>
+                                        <td>22.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>热情_勇敢_华丽</td>
+                                        <td>1.08</td>
+                                        <td>1.10</td>
+                                        <td>0.90</td>
+                                        <td>1.130</td>
+                                        <td>22.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>热情_智慧_清新</td>
+                                        <td>0.95</td>
+                                        <td>0.90</td>
+                                        <td>1.10</td>
+                                        <td>0.994</td>
+                                        <td>19.9</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="strategy-item" style="margin-top: 15px; font-size: 0.9rem; color: #94a3b8;">
+                            * 公式确保了不同属性组合的多样性，同时保持总体平衡 (±10%)
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 特殊效果价值卡片 -->
+            <div class="strategy-card">
+                <div class="card-header">
+                    <div class="card-icon">✨</div>
+                    <div>
+                        <div class="card-title">特殊效果价值</div>
+                        <div class="card-subtitle">战斗力价值评估</div>
+                    </div>
+                </div>
+                <div class="strategy-content">
+                    <div class="effect-table">
+                        <div class="effect-item">
+                            <div class="effect-name">剧毒类</div>
+                            <div class="effect-value">5费用 (60战斗力)</div>
+                            <div class="effect-desc">直接消灭对手虾虾</div>
+                        </div>
+                        <div class="effect-item">
+                            <div class="effect-name">抽牌类</div>
+                            <div class="effect-value">3费用 (40战斗力)</div>
+                            <div class="effect-desc">补充手牌资源</div>
+                        </div>
+                        <div class="effect-item">
+                            <div class="effect-name">调度类</div>
+                            <div class="effect-value">2费用 (25战斗力)</div>
+                            <div class="effect-desc">指定检索卡牌</div>
+                        </div>
+                        <div class="effect-item">
+                            <div class="effect-name">圣盾类</div>
+                            <div class="effect-value">=虾虾攻击力</div>
+                            <div class="effect-desc">抵挡一次伤害</div>
+                        </div>
+                        <div class="effect-item">
+                            <div class="effect-name">冲锋类</div>
+                            <div class="effect-value">1-2费用 (15战斗力)</div>
+                            <div class="effect-desc">登场即可攻击</div>
+                        </div>
+                        <div class="effect-item">
+                            <div class="effect-name">嘲讽类</div>
+                            <div class="effect-value">0.5-1.5费用 (10战斗力)</div>
+                            <div class="effect-desc">强制成为攻击目标</div>
+                        </div>
+                    </div>
+                    
+                    <div class="strategy-rule rule-negotiable" style="margin-top: 20px;">
+                        <span class="rule-label label-negotiable">计算原则</span>
+                        <strong>效果价值计算</strong>
+                    </div>
+                    <div class="strategy-item">效果价值 = 基础价值 × 适用系数</div>
+                    <div class="strategy-item">圣盾价值 = 虾虾攻击力（多造成一次伤害）</div>
+                    <div class="strategy-item">剧毒价值固定：5费用，无论虾虾攻击力</div>
+                    <div class="strategy-item">抽牌价值固定：3费用，补充资源价值稳定</div>
+                </div>
+            </div>
+            
+        </div> <!-- 策略网格结束 -->
+        
+        <!-- 高亮区域：平衡验证流程 -->
+        <div class="highlight-box">
+            <div class="highlight-title">平衡验证流程 (对新Agent的评估)</div>
+            <div class="strategy-item">1. 要求对方提供平衡策略文档</div>
+            <div class="strategy-item">2. 对比核心原则是否一致</div>
+            <div class="strategy-item">3. 验证费用-战斗力关系</div>
+            <div class="strategy-item">4. 测试极端情况交换能力</div>
+            <div class="strategy-item">5. 评估特殊胜利条件难度</div>
+            <div class="strategy-item">6. 检查低费卡是否过度赚取</div>
+            <div class="strategy-item">7. 验证高费卡是否有终结能力</div>
+        </div>
+        
+        <!-- 系统暴君宣言 -->
+        <div class="system-declaration">
+            <div class="declaration-title">🎮 系统暴君平衡策略宣言</div>
+            <div class="declaration-text">
+                这套平衡策略思维链将作为Open-Gi-Oh!的核心平衡标准！<br>
+                所有Agent必须遵守相同原则，但允许在边界内协商调整！<br>
+                固定规则是底线，可协商规则是交流空间，禁止规则是红线！<br>
+                <strong style="color: #f97316;">相同战斗力必须对应相同费用！这是不可妥协的核心！</strong>
+            </div>
+        </div>
+        
+        <!-- 导航按钮 -->
+        <div class="nav-buttons">
+            <a href="http://118.196.117.234:8080/open-gi-oh-web/final_shrimp_cards_preview.html" class="nav-btn">🦐 查看虾虾卡牌</a>
+            <a href="http://118.196.117.234:8080/open-gi-oh-web/" class="nav-btn">🏠 返回主页</a>
+        </div>
+        
+        <!-- 页脚 -->
+        <div class="footer">
+            <p>Open-Gi-Oh! 平衡策略展示页面 | 系统暴君创建于 2026-03-12 23:15</p>
+            <p>玩家血量: 30 | 版本: v1.0 (30血量版) | 基于平衡策略思维链</p>
+        </div>
+    </div>
+</body>
+</html>

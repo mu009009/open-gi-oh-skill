@@ -1,0 +1,1922 @@
+{
+  "total_combinations": 125,
+  "formulas": {
+    "神秘_勇敢_梦幻": {
+      "base_attack_ratio": 0.6059267393310258,
+      "base_health_ratio": 0.29560076357009973,
+      "attack_mult": 0.95,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.0172172022892978,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_勇敢_酷炫": {
+      "base_attack_ratio": 0.6104745819979387,
+      "base_health_ratio": 0.39271898770294034,
+      "attack_mult": 1.05,
+      "health_mult": 1.045,
+      "total_mult": 1.0480426559760545,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_勇敢_华丽": {
+      "base_attack_ratio": 0.6291256655462913,
+      "base_health_ratio": 0.2629386090253678,
+      "attack_mult": 1.0,
+      "health_mult": 1.1,
+      "total_mult": 1.029475298643881,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.1
+    },
+    "神秘_勇敢_清新": {
+      "base_attack_ratio": 0.8756687591442536,
+      "base_health_ratio": 0.2297679353927617,
+      "attack_mult": 0.9,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 0.9644343184225382,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 0.95
+    },
+    "神秘_勇敢_独特": {
+      "base_attack_ratio": 0.8541639923265014,
+      "base_health_ratio": 0.2344954662816497,
+      "attack_mult": 1.1,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.0763061799656253,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.05
+    },
+    "神秘_智慧_梦幻": {
+      "base_attack_ratio": 0.3722125558843097,
+      "base_health_ratio": 0.6681873783510595,
+      "attack_mult": 0.95,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.0816593821804095,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_智慧_酷炫": {
+      "base_attack_ratio": 0.2816621402545886,
+      "base_health_ratio": 0.62860608142098,
+      "attack_mult": 1.05,
+      "health_mult": 1.045,
+      "total_mult": 1.046547138159652,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_智慧_华丽": {
+      "base_attack_ratio": 0.35175551335948996,
+      "base_health_ratio": 0.8032546957826753,
+      "attack_mult": 1.0,
+      "health_mult": 1.1,
+      "total_mult": 1.0695452463904418,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.1
+    },
+    "神秘_智慧_清新": {
+      "base_attack_ratio": 0.26095989400871594,
+      "base_health_ratio": 0.8098890925063434,
+      "attack_mult": 0.9,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 1.1344547380989987,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 0.95
+    },
+    "神秘_智慧_独特": {
+      "base_attack_ratio": 0.2339536961239722,
+      "base_health_ratio": 0.7138757932865064,
+      "attack_mult": 1.1,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.017151409468852,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.05
+    },
+    "神秘_狡猾_梦幻": {
+      "base_attack_ratio": 0.5195767388149161,
+      "base_health_ratio": 0.314910682512922,
+      "attack_mult": 0.95,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.0273608903683968,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_狡猾_酷炫": {
+      "base_attack_ratio": 0.6927229800915182,
+      "base_health_ratio": 0.41855178469735754,
+      "attack_mult": 1.05,
+      "health_mult": 1.045,
+      "total_mult": 1.0481167943430405,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_狡猾_华丽": {
+      "base_attack_ratio": 0.6757511745873858,
+      "base_health_ratio": 0.3568873032050169,
+      "attack_mult": 1.0,
+      "health_mult": 1.1,
+      "total_mult": 1.034560720995791,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.1
+    },
+    "神秘_狡猾_清新": {
+      "base_attack_ratio": 0.6391336568262982,
+      "base_health_ratio": 0.4352305397484286,
+      "attack_mult": 0.9,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 1.025582616911628,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 0.95
+    },
+    "神秘_狡猾_独特": {
+      "base_attack_ratio": 0.6058845489534562,
+      "base_health_ratio": 0.34978584666784035,
+      "attack_mult": 1.1,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.0597387935110743,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.05
+    },
+    "神秘_沉稳_梦幻": {
+      "base_attack_ratio": 0.37092356649368047,
+      "base_health_ratio": 0.6572478393397422,
+      "attack_mult": 0.95,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.0810441102526405,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_沉稳_酷炫": {
+      "base_attack_ratio": 0.3298780531099001,
+      "base_health_ratio": 0.6335020150240371,
+      "attack_mult": 1.05,
+      "health_mult": 1.045,
+      "total_mult": 1.0467120867662794,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_沉稳_华丽": {
+      "base_attack_ratio": 0.41493275162400356,
+      "base_health_ratio": 0.5776305204130581,
+      "attack_mult": 1.0,
+      "health_mult": 1.1,
+      "total_mult": 1.05819583866201,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.1
+    },
+    "神秘_沉稳_清新": {
+      "base_attack_ratio": 0.47090231820548756,
+      "base_health_ratio": 0.6181361797950985,
+      "attack_mult": 0.9,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 1.075955410289249,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 0.95
+    },
+    "神秘_沉稳_独特": {
+      "base_attack_ratio": 0.3500822059102772,
+      "base_health_ratio": 0.5400787347322437,
+      "attack_mult": 1.1,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.0332607643089065,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.05
+    },
+    "神秘_狂野_梦幻": {
+      "base_attack_ratio": 0.1383661945600789,
+      "base_health_ratio": 0.46876021619378205,
+      "attack_mult": 0.95,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.1082797958013462,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_狂野_酷炫": {
+      "base_attack_ratio": 0.12143014863374396,
+      "base_health_ratio": 0.587473991856801,
+      "attack_mult": 1.05,
+      "health_mult": 1.045,
+      "total_mult": 1.0458564638129333,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.0
+    },
+    "神秘_狂野_华丽": {
+      "base_attack_ratio": 0.9230911872642675,
+      "base_health_ratio": 0.13715123820969735,
+      "attack_mult": 1.0,
+      "health_mult": 1.1,
+      "total_mult": 1.0129358375890671,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.1
+    },
+    "神秘_狂野_清新": {
+      "base_attack_ratio": 0.6473103437706207,
+      "base_health_ratio": 0.5061174991967492,
+      "attack_mult": 0.9,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 1.0360262158639697,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 0.95
+    },
+    "神秘_狂野_独特": {
+      "base_attack_ratio": 0.6499512380870429,
+      "base_health_ratio": 0.1506629784714628,
+      "attack_mult": 1.1,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.0792997335182222,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "神秘护盾",
+      "balance_factor": 1.05
+    },
+    "文艺_勇敢_梦幻": {
+      "base_attack_ratio": 0.7049029818333946,
+      "base_health_ratio": 0.21107861919150547,
+      "attack_mult": 0.855,
+      "health_mult": 1.05,
+      "total_mult": 0.8999357614784935,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_勇敢_酷炫": {
+      "base_attack_ratio": 0.8211101793886537,
+      "base_health_ratio": 0.17302717792388372,
+      "attack_mult": 0.9450000000000001,
+      "health_mult": 0.95,
+      "total_mult": 0.9458702377827932,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_勇敢_华丽": {
+      "base_attack_ratio": 0.8046051188143092,
+      "base_health_ratio": 0.19910797260696972,
+      "attack_mult": 0.9,
+      "health_mult": 1.0,
+      "total_mult": 0.9198371401457991,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.1
+    },
+    "文艺_勇敢_清新": {
+      "base_attack_ratio": 0.6293756384603478,
+      "base_health_ratio": 0.31999258885478166,
+      "attack_mult": 0.81,
+      "health_mult": 1.1,
+      "total_mult": 0.9077469522340396,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 0.95
+    },
+    "文艺_勇敢_独特": {
+      "base_attack_ratio": 0.7781113907028634,
+      "base_health_ratio": 0.3988329689699027,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 0.9,
+      "total_mult": 0.9595015597701907,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.05
+    },
+    "文艺_智慧_梦幻": {
+      "base_attack_ratio": 0.3884687388349809,
+      "base_health_ratio": 0.8180123428187601,
+      "attack_mult": 0.855,
+      "health_mult": 1.05,
+      "total_mult": 0.9872129366761493,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_智慧_酷炫": {
+      "base_attack_ratio": 0.18062142905966477,
+      "base_health_ratio": 0.8843422618667116,
+      "attack_mult": 0.9450000000000001,
+      "health_mult": 0.95,
+      "total_mult": 0.9491519831586812,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_智慧_华丽": {
+      "base_attack_ratio": 0.3464543575658836,
+      "base_health_ratio": 0.7599340591179167,
+      "attack_mult": 0.9,
+      "health_mult": 1.0,
+      "total_mult": 0.9686860100538364,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.1
+    },
+    "文艺_智慧_清新": {
+      "base_attack_ratio": 0.2827520832017194,
+      "base_health_ratio": 0.6287147326447416,
+      "attack_mult": 0.81,
+      "health_mult": 1.1,
+      "total_mult": 1.0100372029975127,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 0.95
+    },
+    "文艺_智慧_独特": {
+      "base_attack_ratio": 0.17469733353458605,
+      "base_health_ratio": 0.634740751430883,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 0.9,
+      "total_mult": 0.9194242898995584,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.05
+    },
+    "文艺_狡猾_梦幻": {
+      "base_attack_ratio": 0.6687433631272104,
+      "base_health_ratio": 0.35561550826861776,
+      "attack_mult": 0.855,
+      "health_mult": 1.05,
+      "total_mult": 0.9226960253371832,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_狡猾_酷炫": {
+      "base_attack_ratio": 0.6772613954885199,
+      "base_health_ratio": 0.41653865973268983,
+      "attack_mult": 0.9450000000000001,
+      "health_mult": 0.95,
+      "total_mult": 0.9469040895899774,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_狡猾_华丽": {
+      "base_attack_ratio": 0.6330961039675184,
+      "base_health_ratio": 0.48056965831437964,
+      "attack_mult": 0.9,
+      "health_mult": 1.0,
+      "total_mult": 0.943152054646063,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.1
+    },
+    "文艺_狡猾_清新": {
+      "base_attack_ratio": 0.6953733325303707,
+      "base_health_ratio": 0.48657515599188417,
+      "attack_mult": 0.81,
+      "health_mult": 1.1,
+      "total_mult": 0.9293848941877889,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 0.95
+    },
+    "文艺_狡猾_独特": {
+      "base_attack_ratio": 0.6036811696800416,
+      "base_health_ratio": 0.40406073462117753,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 0.9,
+      "total_mult": 0.9539139089476267,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.05
+    },
+    "文艺_沉稳_梦幻": {
+      "base_attack_ratio": 0.4813300772617113,
+      "base_health_ratio": 0.5673556312564524,
+      "attack_mult": 0.855,
+      "health_mult": 1.05,
+      "total_mult": 0.9604980984258279,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_沉稳_酷炫": {
+      "base_attack_ratio": 0.4173099268913102,
+      "base_health_ratio": 0.5287791186298114,
+      "attack_mult": 0.9450000000000001,
+      "health_mult": 0.95,
+      "total_mult": 0.9477945525906525,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_沉稳_华丽": {
+      "base_attack_ratio": 0.44440411180558426,
+      "base_health_ratio": 0.5489988972696515,
+      "attack_mult": 0.9,
+      "health_mult": 1.0,
+      "total_mult": 0.9552644689269381,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.1
+    },
+    "文艺_沉稳_清新": {
+      "base_attack_ratio": 0.3098478280941926,
+      "base_health_ratio": 0.5288116848067144,
+      "attack_mult": 0.81,
+      "health_mult": 1.1,
+      "total_mult": 0.992857746481041,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 0.95
+    },
+    "文艺_沉稳_独特": {
+      "base_attack_ratio": 0.3775605220133636,
+      "base_health_ratio": 0.5851579338636342,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 0.9,
+      "total_mult": 0.9352963493883037,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.05
+    },
+    "文艺_狂野_梦幻": {
+      "base_attack_ratio": 0.10561208888307047,
+      "base_health_ratio": 0.8429006124970377,
+      "attack_mult": 0.855,
+      "health_mult": 1.05,
+      "total_mult": 1.0282877368935246,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_狂野_酷炫": {
+      "base_attack_ratio": 0.16399168250305962,
+      "base_health_ratio": 0.35337186113155794,
+      "attack_mult": 0.9450000000000001,
+      "health_mult": 0.95,
+      "total_mult": 0.948415121392677,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.0
+    },
+    "文艺_狂野_华丽": {
+      "base_attack_ratio": 0.614826219790611,
+      "base_health_ratio": 0.8304931101059916,
+      "attack_mult": 0.9,
+      "health_mult": 1.0,
+      "total_mult": 0.9574608733812068,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.1
+    },
+    "文艺_狂野_清新": {
+      "base_attack_ratio": 0.7336738415357429,
+      "base_health_ratio": 0.34917020489964545,
+      "attack_mult": 0.81,
+      "health_mult": 1.1,
+      "total_mult": 0.9035124127562346,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 0.95
+    },
+    "文艺_狂野_独特": {
+      "base_attack_ratio": 0.8158861896075478,
+      "base_health_ratio": 0.14590804957508602,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 0.9,
+      "total_mult": 0.9763466384734043,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "艺术灵感",
+      "balance_factor": 1.05
+    },
+    "战斗_勇敢_梦幻": {
+      "base_attack_ratio": 0.6248027567561698,
+      "base_health_ratio": 0.24895482312862724,
+      "attack_mult": 1.14,
+      "health_mult": 0.9450000000000001,
+      "total_mult": 1.0844397489330129,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_勇敢_酷炫": {
+      "base_attack_ratio": 0.8850026464300611,
+      "base_health_ratio": 0.25012463561855214,
+      "attack_mult": 1.26,
+      "health_mult": 0.855,
+      "total_mult": 1.1707584858301598,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_勇敢_华丽": {
+      "base_attack_ratio": 0.7792874175808506,
+      "base_health_ratio": 0.3074008760829888,
+      "attack_mult": 1.2,
+      "health_mult": 0.9,
+      "total_mult": 1.115136416429066,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.1
+    },
+    "战斗_勇敢_清新": {
+      "base_attack_ratio": 0.8599870852467149,
+      "base_health_ratio": 0.22775342206228966,
+      "attack_mult": 1.08,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.0611556084857812,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 0.95
+    },
+    "战斗_勇敢_独特": {
+      "base_attack_ratio": 0.6906688768086237,
+      "base_health_ratio": 0.38230933970237024,
+      "attack_mult": 1.32,
+      "health_mult": 0.81,
+      "total_mult": 1.1382835771985955,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.05
+    },
+    "战斗_智慧_梦幻": {
+      "base_attack_ratio": 0.27233096633206344,
+      "base_health_ratio": 0.6217670088941147,
+      "attack_mult": 1.14,
+      "health_mult": 0.9450000000000001,
+      "total_mult": 1.0043945405382655,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_智慧_酷炫": {
+      "base_attack_ratio": 0.20605044984363202,
+      "base_health_ratio": 0.6952722267544413,
+      "attack_mult": 1.26,
+      "health_mult": 0.855,
+      "total_mult": 0.9475866333482742,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_智慧_华丽": {
+      "base_attack_ratio": 0.3446370642923255,
+      "base_health_ratio": 0.7825235805021715,
+      "attack_mult": 1.2,
+      "health_mult": 0.9,
+      "total_mult": 0.9917270486378167,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.1
+    },
+    "战斗_智慧_清新": {
+      "base_attack_ratio": 0.3598741941403948,
+      "base_health_ratio": 0.7721229913851951,
+      "attack_mult": 1.08,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.0186119770320785,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 0.95
+    },
+    "战斗_智慧_独特": {
+      "base_attack_ratio": 0.14770073518614454,
+      "base_health_ratio": 0.7300255414116303,
+      "attack_mult": 1.32,
+      "health_mult": 0.81,
+      "total_mult": 0.8958210320840755,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.05
+    },
+    "战斗_狡猾_梦幻": {
+      "base_attack_ratio": 0.6729402667224671,
+      "base_health_ratio": 0.47912965827382303,
+      "attack_mult": 1.14,
+      "health_mult": 0.9450000000000001,
+      "total_mult": 1.0589022460041246,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_狡猾_酷炫": {
+      "base_attack_ratio": 0.6186881807440443,
+      "base_health_ratio": 0.43839943603450393,
+      "attack_mult": 1.26,
+      "health_mult": 0.855,
+      "total_mult": 1.092036844651478,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_狡猾_华丽": {
+      "base_attack_ratio": 0.6638739771149792,
+      "base_health_ratio": 0.47855363967185505,
+      "attack_mult": 1.2,
+      "health_mult": 0.9,
+      "total_mult": 1.0743324392793068,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.1
+    },
+    "战斗_狡猾_清新": {
+      "base_attack_ratio": 0.6891574202374209,
+      "base_health_ratio": 0.33924039481796,
+      "attack_mult": 1.08,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.050311454296534,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 0.95
+    },
+    "战斗_狡猾_独特": {
+      "base_attack_ratio": 0.5128244785166398,
+      "base_health_ratio": 0.36710053327697034,
+      "attack_mult": 1.32,
+      "health_mult": 0.81,
+      "total_mult": 1.1072304236589101,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.05
+    },
+    "战斗_沉稳_梦幻": {
+      "base_attack_ratio": 0.48531263896410537,
+      "base_health_ratio": 0.6301615193796068,
+      "attack_mult": 1.14,
+      "health_mult": 0.9450000000000001,
+      "total_mult": 1.0298392263416651,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_沉稳_酷炫": {
+      "base_attack_ratio": 0.36174447334902304,
+      "base_health_ratio": 0.6499281619386403,
+      "attack_mult": 1.26,
+      "health_mult": 0.855,
+      "total_mult": 0.999816125885125,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_沉稳_华丽": {
+      "base_attack_ratio": 0.4488221082084387,
+      "base_health_ratio": 0.5931436406041427,
+      "attack_mult": 1.2,
+      "health_mult": 0.9,
+      "total_mult": 1.0292236646127515,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.1
+    },
+    "战斗_沉稳_清新": {
+      "base_attack_ratio": 0.37032684789652787,
+      "base_health_ratio": 0.5185561952159488,
+      "attack_mult": 1.08,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.0274958399408574,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 0.95
+    },
+    "战斗_沉稳_独特": {
+      "base_attack_ratio": 0.4683861590448597,
+      "base_health_ratio": 0.6626350032056612,
+      "attack_mult": 1.32,
+      "health_mult": 0.81,
+      "total_mult": 1.0212046609610363,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.05
+    },
+    "战斗_狂野_梦幻": {
+      "base_attack_ratio": 0.27271431254532086,
+      "base_health_ratio": 0.2534773221145483,
+      "attack_mult": 1.14,
+      "health_mult": 0.9450000000000001,
+      "total_mult": 1.0460644933204093,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_狂野_酷炫": {
+      "base_attack_ratio": 0.20886461832491465,
+      "base_health_ratio": 0.5749462545980182,
+      "attack_mult": 1.26,
+      "health_mult": 0.855,
+      "total_mult": 0.9629216598592754,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.0
+    },
+    "战斗_狂野_华丽": {
+      "base_attack_ratio": 0.7181924033625683,
+      "base_health_ratio": 0.6486582820749254,
+      "attack_mult": 1.2,
+      "health_mult": 0.9,
+      "total_mult": 1.0576307663333453,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.1
+    },
+    "战斗_狂野_清新": {
+      "base_attack_ratio": 0.09176107710090917,
+      "base_health_ratio": 0.900104183350831,
+      "attack_mult": 1.08,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 0.9983262286404915,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 0.95
+    },
+    "战斗_狂野_独特": {
+      "base_attack_ratio": 0.11631427461697352,
+      "base_health_ratio": 0.8490335135521563,
+      "attack_mult": 1.32,
+      "health_mult": 0.81,
+      "total_mult": 0.8714496462121314,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "战斗狂热",
+      "balance_factor": 1.05
+    },
+    "治愈_勇敢_梦幻": {
+      "base_attack_ratio": 0.8634219847833775,
+      "base_health_ratio": 0.28505517612953324,
+      "attack_mult": 0.76,
+      "health_mult": 1.26,
+      "total_mult": 0.8841013691134033,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_勇敢_酷炫": {
+      "base_attack_ratio": 0.6085271287384154,
+      "base_health_ratio": 0.12802907117706247,
+      "attack_mult": 0.8400000000000001,
+      "health_mult": 1.14,
+      "total_mult": 0.8921463553731898,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_勇敢_华丽": {
+      "base_attack_ratio": 0.8353861461273383,
+      "base_health_ratio": 0.37521424086247845,
+      "attack_mult": 0.8,
+      "health_mult": 1.2,
+      "total_mult": 0.9239762500970139,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.1
+    },
+    "治愈_勇敢_清新": {
+      "base_attack_ratio": 0.6074365597057994,
+      "base_health_ratio": 0.1665153171519837,
+      "attack_mult": 0.7200000000000001,
+      "health_mult": 1.32,
+      "total_mult": 0.8490896673018198,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 0.95
+    },
+    "治愈_勇敢_独特": {
+      "base_attack_ratio": 0.824450743021282,
+      "base_health_ratio": 0.26003642172537234,
+      "attack_mult": 0.8800000000000001,
+      "health_mult": 1.08,
+      "total_mult": 0.9279556476421958,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.05
+    },
+    "治愈_智慧_梦幻": {
+      "base_attack_ratio": 0.11032399150143668,
+      "base_health_ratio": 0.8306687075339457,
+      "attack_mult": 0.76,
+      "health_mult": 1.26,
+      "total_mult": 1.2013789333251308,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_智慧_酷炫": {
+      "base_attack_ratio": 0.15721268000676306,
+      "base_health_ratio": 0.8728989687944062,
+      "attack_mult": 0.8400000000000001,
+      "health_mult": 1.14,
+      "total_mult": 1.0942148619939231,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_智慧_华丽": {
+      "base_attack_ratio": 0.3047754917741361,
+      "base_health_ratio": 0.6347895164327746,
+      "attack_mult": 0.8,
+      "health_mult": 1.2,
+      "total_mult": 1.0702482578163368,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.1
+    },
+    "治愈_智慧_清新": {
+      "base_attack_ratio": 0.25810564306064576,
+      "base_health_ratio": 0.729942797781209,
+      "attack_mult": 0.7200000000000001,
+      "health_mult": 1.32,
+      "total_mult": 1.1632633670223316,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 0.95
+    },
+    "治愈_智慧_独特": {
+      "base_attack_ratio": 0.19641033811324998,
+      "base_health_ratio": 0.6482117304831512,
+      "attack_mult": 0.8800000000000001,
+      "health_mult": 1.08,
+      "total_mult": 1.0334915448184663,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.05
+    },
+    "治愈_狡猾_梦幻": {
+      "base_attack_ratio": 0.5240900626108853,
+      "base_health_ratio": 0.38676101487382875,
+      "attack_mult": 0.76,
+      "health_mult": 1.26,
+      "total_mult": 0.972307491550571,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_狡猾_酷炫": {
+      "base_attack_ratio": 0.6393399714567363,
+      "base_health_ratio": 0.4950652465085122,
+      "attack_mult": 0.8400000000000001,
+      "health_mult": 1.14,
+      "total_mult": 0.9709228586051015,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_狡猾_华丽": {
+      "base_attack_ratio": 0.5146629220083675,
+      "base_health_ratio": 0.4432239184646656,
+      "attack_mult": 0.8,
+      "health_mult": 1.2,
+      "total_mult": 0.9850840411361276,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.1
+    },
+    "治愈_狡猾_清新": {
+      "base_attack_ratio": 0.6475789013980227,
+      "base_health_ratio": 0.3044907177570047,
+      "attack_mult": 0.7200000000000001,
+      "health_mult": 1.32,
+      "total_mult": 0.9118918816213738,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 0.95
+    },
+    "治愈_狡猾_独特": {
+      "base_attack_ratio": 0.6624490716953704,
+      "base_health_ratio": 0.36673756472833124,
+      "attack_mult": 0.8800000000000001,
+      "health_mult": 1.08,
+      "total_mult": 0.9512674556293695,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.05
+    },
+    "治愈_沉稳_梦幻": {
+      "base_attack_ratio": 0.3660618874523143,
+      "base_health_ratio": 0.6088403339835762,
+      "attack_mult": 0.76,
+      "health_mult": 1.26,
+      "total_mult": 1.0722571272259704,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_沉稳_酷炫": {
+      "base_attack_ratio": 0.4337833814818336,
+      "base_health_ratio": 0.6931481147826462,
+      "attack_mult": 0.8400000000000001,
+      "health_mult": 1.14,
+      "total_mult": 1.0245226929268392,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_沉稳_华丽": {
+      "base_attack_ratio": 0.43154769118626435,
+      "base_health_ratio": 0.6844647983348559,
+      "attack_mult": 0.8,
+      "health_mult": 1.2,
+      "total_mult": 1.0453251391939382,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.1
+    },
+    "治愈_沉稳_清新": {
+      "base_attack_ratio": 0.32092651815548323,
+      "base_health_ratio": 0.6777923126652993,
+      "attack_mult": 0.7200000000000001,
+      "health_mult": 1.32,
+      "total_mult": 1.127197075942745,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 0.95
+    },
+    "治愈_沉稳_独特": {
+      "base_attack_ratio": 0.30083537804858357,
+      "base_health_ratio": 0.6395483874141651,
+      "attack_mult": 0.8800000000000001,
+      "health_mult": 1.08,
+      "total_mult": 1.0160185938768207,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.05
+    },
+    "治愈_狂野_梦幻": {
+      "base_attack_ratio": 0.1491132474933708,
+      "base_health_ratio": 0.6947951945179578,
+      "attack_mult": 0.76,
+      "health_mult": 1.26,
+      "total_mult": 1.1716531841191318,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_狂野_酷炫": {
+      "base_attack_ratio": 0.0510449193713483,
+      "base_health_ratio": 0.8140716174156979,
+      "attack_mult": 0.8400000000000001,
+      "health_mult": 1.14,
+      "total_mult": 1.122298944523385,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.0
+    },
+    "治愈_狂野_华丽": {
+      "base_attack_ratio": 0.1010929256355114,
+      "base_health_ratio": 0.8446663737897889,
+      "attack_mult": 0.8,
+      "health_mult": 1.2,
+      "total_mult": 1.1572436979696878,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.1
+    },
+    "治愈_狂野_清新": {
+      "base_attack_ratio": 0.4661763448850297,
+      "base_health_ratio": 0.2979764595164669,
+      "attack_mult": 0.7200000000000001,
+      "health_mult": 1.32,
+      "total_mult": 0.9539661317475759,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 0.95
+    },
+    "治愈_狂野_独特": {
+      "base_attack_ratio": 0.210234083992773,
+      "base_health_ratio": 0.8003342765043348,
+      "attack_mult": 0.8800000000000001,
+      "health_mult": 1.08,
+      "total_mult": 1.0383929020122187,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "治愈之光",
+      "balance_factor": 1.05
+    },
+    "霸气_勇敢_梦幻": {
+      "base_attack_ratio": 0.6613759468813066,
+      "base_health_ratio": 0.19260396261082605,
+      "attack_mult": 1.045,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.0698090565734628,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_勇敢_酷炫": {
+      "base_attack_ratio": 0.8328643082766513,
+      "base_health_ratio": 0.2651110355571208,
+      "attack_mult": 1.1550000000000002,
+      "health_mult": 1.045,
+      "total_mult": 1.1284400102196666,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_勇敢_华丽": {
+      "base_attack_ratio": 0.6362216368345868,
+      "base_health_ratio": 0.31793056855311264,
+      "attack_mult": 1.1,
+      "health_mult": 1.1,
+      "total_mult": 1.1,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.1
+    },
+    "霸气_勇敢_清新": {
+      "base_attack_ratio": 0.7854852999954448,
+      "base_health_ratio": 0.34715547850454087,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 1.0574302097547164,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 0.95
+    },
+    "霸气_勇敢_独特": {
+      "base_attack_ratio": 0.7055766302209598,
+      "base_health_ratio": 0.20974925697977762,
+      "attack_mult": 1.2100000000000002,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.1595864399982483,
+      "variability": 0.1,
+      "personality_bias": [
+        0.7,
+        0.3
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.05
+    },
+    "霸气_智慧_梦幻": {
+      "base_attack_ratio": 0.17559460987578146,
+      "base_health_ratio": 0.639942711899617,
+      "attack_mult": 1.045,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.1313157288200044,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_智慧_酷炫": {
+      "base_attack_ratio": 0.13974654872168496,
+      "base_health_ratio": 0.873097417705315,
+      "attack_mult": 1.1550000000000002,
+      "health_mult": 1.045,
+      "total_mult": 1.06017718510346,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_智慧_华丽": {
+      "base_attack_ratio": 0.3836284036795736,
+      "base_health_ratio": 0.7946436900239273,
+      "attack_mult": 1.1,
+      "health_mult": 1.1,
+      "total_mult": 1.1,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.1
+    },
+    "霸气_智慧_清新": {
+      "base_attack_ratio": 0.1128606652330011,
+      "base_health_ratio": 0.8858460237450317,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 1.1851384999967631,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 0.95
+    },
+    "霸气_智慧_独特": {
+      "base_attack_ratio": 0.3858394765696703,
+      "base_health_ratio": 0.8928134220563714,
+      "attack_mult": 1.2100000000000002,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.056386026212852,
+      "variability": 0.1,
+      "personality_bias": [
+        0.3,
+        0.7
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.05
+    },
+    "霸气_狡猾_梦幻": {
+      "base_attack_ratio": 0.6875472293923784,
+      "base_health_ratio": 0.3738648591086763,
+      "attack_mult": 1.045,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.0837456812933344,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_狡猾_酷炫": {
+      "base_attack_ratio": 0.5361279541507656,
+      "base_health_ratio": 0.37079412785277194,
+      "attack_mult": 1.1550000000000002,
+      "health_mult": 1.045,
+      "total_mult": 1.1100266170896413,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_狡猾_华丽": {
+      "base_attack_ratio": 0.5588612221007988,
+      "base_health_ratio": 0.40071261042664647,
+      "attack_mult": 1.1,
+      "health_mult": 1.1,
+      "total_mult": 1.1000000000000003,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.1
+    },
+    "霸气_狡猾_清新": {
+      "base_attack_ratio": 0.6401369704922933,
+      "base_health_ratio": 0.4925720908749714,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 1.0856696328196473,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 0.95
+    },
+    "霸气_狡猾_独特": {
+      "base_attack_ratio": 0.6812226989739825,
+      "base_health_ratio": 0.46726727558179837,
+      "attack_mult": 1.2100000000000002,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.1204922089827067,
+      "variability": 0.15,
+      "personality_bias": [
+        0.6,
+        0.4
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.05
+    },
+    "霸气_沉稳_梦幻": {
+      "base_attack_ratio": 0.30100822713210823,
+      "base_health_ratio": 0.6267081639434782,
+      "attack_mult": 1.045,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.1193092379276137,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_沉稳_酷炫": {
+      "base_attack_ratio": 0.3852959606157656,
+      "base_health_ratio": 0.5472109888761817,
+      "attack_mult": 1.1550000000000002,
+      "health_mult": 1.045,
+      "total_mult": 1.0904501231232917,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_沉稳_华丽": {
+      "base_attack_ratio": 0.4406018788341183,
+      "base_health_ratio": 0.6901046517616191,
+      "attack_mult": 1.1,
+      "health_mult": 1.1,
+      "total_mult": 1.1,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.1
+    },
+    "霸气_沉稳_清新": {
+      "base_attack_ratio": 0.33414317646052577,
+      "base_health_ratio": 0.5430334256390075,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 1.1261953264081999,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 0.95
+    },
+    "霸气_沉稳_独特": {
+      "base_attack_ratio": 0.40348011141125323,
+      "base_health_ratio": 0.5267277838671813,
+      "attack_mult": 1.2100000000000002,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.085425576326576,
+      "variability": 0.1,
+      "personality_bias": [
+        0.4,
+        0.6
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.05
+    },
+    "霸气_狂野_梦幻": {
+      "base_attack_ratio": 0.4615525895594166,
+      "base_health_ratio": 0.1541514960895678,
+      "attack_mult": 1.045,
+      "health_mult": 1.1550000000000002,
+      "total_mult": 1.0725402826862505,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_狂野_酷炫": {
+      "base_attack_ratio": 0.772537049107631,
+      "base_health_ratio": 0.8166472920626947,
+      "attack_mult": 1.1550000000000002,
+      "health_mult": 1.045,
+      "total_mult": 1.0984733908460602,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.0
+    },
+    "霸气_狂野_华丽": {
+      "base_attack_ratio": 0.6847847226903825,
+      "base_health_ratio": 0.5916691550806603,
+      "attack_mult": 1.1,
+      "health_mult": 1.1,
+      "total_mult": 1.1,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.1
+    },
+    "霸气_狂野_清新": {
+      "base_attack_ratio": 0.8417909718612322,
+      "base_health_ratio": 0.12112523005376562,
+      "attack_mult": 0.9900000000000001,
+      "health_mult": 1.2100000000000002,
+      "total_mult": 1.017673800231872,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 0.95
+    },
+    "霸气_狂野_独特": {
+      "base_attack_ratio": 0.8970831198901645,
+      "base_health_ratio": 0.1322735261231966,
+      "attack_mult": 1.2100000000000002,
+      "health_mult": 0.9900000000000001,
+      "total_mult": 1.1817297441466896,
+      "variability": 0.3,
+      "personality_bias": [
+        0.5,
+        0.5
+      ],
+      "special_ability": "霸气领域",
+      "balance_factor": 1.05
+    }
+  },
+  "cost_ranges": [
+    [
+      0,
+      12
+    ],
+    [
+      12,
+      24
+    ],
+    [
+      24,
+      39
+    ],
+    [
+      39,
+      57
+    ],
+    [
+      57,
+      81
+    ],
+    [
+      81,
+      109
+    ],
+    [
+      109,
+      142
+    ],
+    [
+      142,
+      178
+    ],
+    [
+      178,
+      218
+    ],
+    [
+      218,
+      264
+    ],
+    [
+      264,
+      314
+    ]
+  ],
+  "personality_preferences": {
+    "勇敢": {
+      "attack_bias": 0.7,
+      "health_bias": 0.3,
+      "attack_range": [
+        0.6,
+        0.9
+      ],
+      "health_range": [
+        0.1,
+        0.4
+      ],
+      "variability": 0.1
+    },
+    "智慧": {
+      "attack_bias": 0.3,
+      "health_bias": 0.7,
+      "attack_range": [
+        0.1,
+        0.4
+      ],
+      "health_range": [
+        0.6,
+        0.9
+      ],
+      "variability": 0.1
+    },
+    "狡猾": {
+      "attack_bias": 0.6,
+      "health_bias": 0.4,
+      "attack_range": [
+        0.5,
+        0.7
+      ],
+      "health_range": [
+        0.3,
+        0.5
+      ],
+      "variability": 0.15
+    },
+    "沉稳": {
+      "attack_bias": 0.4,
+      "health_bias": 0.6,
+      "attack_range": [
+        0.3,
+        0.5
+      ],
+      "health_range": [
+        0.5,
+        0.7
+      ],
+      "variability": 0.1
+    },
+    "狂野": {
+      "attack_bias": 0.5,
+      "health_bias": 0.5,
+      "attack_range": [
+        0.1,
+        0.9
+      ],
+      "health_range": [
+        0.1,
+        0.9
+      ],
+      "variability": 0.3
+    }
+  },
+  "wish_base_bonus": {
+    "神秘": {
+      "attack_mult": 1.0,
+      "health_mult": 1.1,
+      "special": "神秘护盾"
+    },
+    "文艺": {
+      "attack_mult": 0.9,
+      "health_mult": 1.0,
+      "special": "艺术灵感"
+    },
+    "战斗": {
+      "attack_mult": 1.2,
+      "health_mult": 0.9,
+      "special": "战斗狂热"
+    },
+    "治愈": {
+      "attack_mult": 0.8,
+      "health_mult": 1.2,
+      "special": "治愈之光"
+    },
+    "霸气": {
+      "attack_mult": 1.1,
+      "health_mult": 1.1,
+      "special": "霸气领域"
+    }
+  },
+  "aesthetic_style_bonus": {
+    "梦幻": {
+      "attack_mult": 0.95,
+      "health_mult": 1.05,
+      "balance": 1.0
+    },
+    "酷炫": {
+      "attack_mult": 1.05,
+      "health_mult": 0.95,
+      "balance": 1.0
+    },
+    "华丽": {
+      "attack_mult": 1.0,
+      "health_mult": 1.0,
+      "balance": 1.1
+    },
+    "清新": {
+      "attack_mult": 0.9,
+      "health_mult": 1.1,
+      "balance": 0.95
+    },
+    "独特": {
+      "attack_mult": 1.1,
+      "health_mult": 0.9,
+      "balance": 1.05
+    }
+  }
+}
