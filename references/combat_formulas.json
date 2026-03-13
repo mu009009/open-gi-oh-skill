@@ -1,0 +1,19 @@
+{
+  "description": "Open-Gi-Oh! 125种战斗力公式参考",
+  "version": "1.0.0",
+  "formula_count": 125,
+  "combinations": {
+    "wish_count": 5,
+    "personality_count": 5,
+    "aesthetic_count": 5,
+    "total_combinations": 125
+  },
+  "formula_format": "wish_personality_aesthetic",
+  "example_formulas": [
+    "神秘_勇敢_梦幻",
+    "文艺_智慧_酷炫", 
+    "战斗_狡猾_华丽",
+    "治愈_沉稳_清新",
+    "霸气_狂野_独特"
+  ]
+}

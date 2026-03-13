@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🎴 页面功能测试</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #0f172a; color: white; }
+        .test-section { padding: 20px; margin: 20px 0; background: rgba(30, 41, 59, 0.9); border-radius: 10px; }
+        .test-btn { padding: 10px 20px; background: #22d3ee; color: white; border: none; border-radius: 5px; cursor: pointer; margin: 5px; }
+        .result { padding: 10px; margin: 10px 0; background: rgba(255,255,255,0.1); border-radius: 5px; }
+        .success { color: #10b981; }
+        .error { color: #ef4444; }
+    </style>
+</head>
+<body>
+    <h1>🎴 页面功能测试</h1>
+    
+    <div class="test-section">
+        <h3>1. 数据文件测试</h3>
+        <button class="test-btn" onclick="testDataFile()">测试数据文件</button>
+        <div id="dataTestResult" class="result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>2. 页面功能测试</h3>
+        <button class="test-btn" onclick="testPageLoad()">测试页面加载</button>
+        <div id="pageTestResult" class="result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>3. 直接显示测试</h3>
+        <div id="directTest" class="result">
+            <p>加载数据并显示前3张卡牌...</p>
+        </div>
+    </div>
+    
+    <script src="balanced_shrimp_cards_v1.0.1.js"></script>
+    <script>
+        function testDataFile() {
+            const resultDiv = document.getElementById('dataTestResult');
+            resultDiv.innerHTML = '';
+            
+            try {
+                if (typeof balancedShrimpCardsV101 === 'undefined') {
+                    resultDiv.innerHTML = '<div class="error">❌ 错误: balancedShrimpCardsV101 未定义</div>';
+                    return;
+                }
+                
+                const count = balancedShrimpCardsV101.length;
+                resultDiv.innerHTML = `
+                    <div class="success">✅ 数据文件加载成功</div>
+                    <div>卡牌数量: ${count} 张</div>
+                    <div>示例卡牌: ${balancedShrimpCardsV101[0]?.name || '未知'}</div>
+                    <div>攻击力: ${balancedShrimpCardsV101[0]?.attack || '未知'}</div>
+                    <div>生命值: ${balancedShrimpCardsV101[0]?.health || '未知'}</div>
+                `;
+                
+                // 同时测试直接显示
+                showDirectTest();
+                
+            } catch (error) {
+                resultDiv.innerHTML = `<div class="error">❌ 测试失败: ${error}</div>`;
+            }
+        }
+        
+        function testPageLoad() {
+            const resultDiv = document.getElementById('pageTestResult');
+            resultDiv.innerHTML = '<div>正在测试页面加载...</div>';
+            
+            // 尝试加载主页面
+            fetch('final_shrimp_cards_preview.html')
+                .then(response => {
+                    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                    return response.text();
+                })
+                .then(html => {
+                    // 检查页面内容
+                    const hasTitle = html.includes('🎴 最终版虾虾卡牌展示');
+                    const hasScript = html.includes('balanced_shrimp_cards_v1.0.1.js');
+                    
+                    resultDiv.innerHTML = `
+                        <div class="success">✅ 页面加载成功</div>
+                        <div>标题存在: ${hasTitle ? '✅' : '❌'}</div>
+                        <div>脚本引用: ${hasScript ? '✅' : '❌'}</div>
+                        <div>页面大小: ${html.length} 字符</div>
+                    `;
+                })
+                .catch(error => {
+                    resultDiv.innerHTML = `<div class="error">❌ 页面加载失败: ${error}</div>`;
+                });
+        }
+        
+        function showDirectTest() {
+            const testDiv = document.getElementById('directTest');
+            
+            try {
+                if (typeof balancedShrimpCardsV101 === 'undefined') {
+                    testDiv.innerHTML = '<div class="error">❌ 无法显示: 数据未加载</div>';
+                    return;
+                }
+                
+                const cards = balancedShrimpCardsV101.slice(0, 3);
+                
+                let html = '<h4>前3张卡牌:</h4>';
+                cards.forEach(card => {
+                    html += `
+                        <div style="padding: 10px; margin: 10px 0; background: rgba(255,255,255,0.05); border-radius: 5px;">
+                            <div><strong>${card.name}</strong></div>
+                            <div>费用: ${card.cost} | 攻击: ${card.attack} | 生命: ${card.health}</div>
+                            <div>性格: ${card.personality} | 稀有度: ${card.rarity}</div>
+                        </div>
+                    `;
+                });
+                
+                testDiv.innerHTML = html;
+                
+            } catch (error) {
+                testDiv.innerHTML = `<div class="error">❌ 显示失败: ${error}</div>`;
+            }
+        }
+        
+        // 自动运行数据测试
+        window.onload = function() {
+            setTimeout(testDataFile, 500);
+        };
+    </script>
+</body>
+</html>

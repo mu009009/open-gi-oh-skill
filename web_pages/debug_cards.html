@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🎴 卡牌显示调试</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #0f172a; color: #f8fafc; }
+        .debug-section { padding: 20px; margin: 20px 0; border-radius: 10px; background: rgba(30, 41, 59, 0.9); }
+        .test-btn { padding: 10px 20px; background: #22d3ee; color: white; border: none; border-radius: 5px; cursor: pointer; margin: 5px; }
+        .test-btn:hover { background: #06b6d4; }
+        .result { padding: 10px; margin: 10px 0; border-radius: 5px; background: rgba(255,255,255,0.1); }
+        .success { color: #10b981; }
+        .error { color: #ef4444; }
+    </style>
+</head>
+<body>
+    <h1>🎴 卡牌显示问题调试</h1>
+    
+    <div class="debug-section">
+        <h3>1. 数据加载测试</h3>
+        <button class="test-btn" onclick="testDataLoading()">测试数据加载</button>
+        <div id="dataResult" class="result"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>2. 页面功能测试</h3>
+        <button class="test-btn" onclick="testPageFunctions()">测试页面函数</button>
+        <div id="functionResult" class="result"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>3. 直接显示测试</h3>
+        <button class="test-btn" onclick="displayTestCards()">显示测试卡牌</button>
+        <div id="testCardsContainer" class="result"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h3>4. 控制台输出</h3>
+        <div id="consoleOutput" class="result"></div>
+    </div>
+    
+    <script src="balanced_shrimp_cards_v1.0.1.js"></script>
+    <script>
+        const consoleOutput = document.getElementById('consoleOutput');
+        
+        function log(message, type = 'info') {
+            const div = document.createElement('div');
+            div.textContent = message;
+            div.className = type;
+            consoleOutput.appendChild(div);
+            console.log(message);
+        }
+        
+        function testDataLoading() {
+            log("🔍 测试数据加载...");
+            const resultDiv = document.getElementById('dataResult');
+            resultDiv.innerHTML = '';
+            
+            try {
+                if (typeof balancedShrimpCardsV101 === 'undefined') {
+                    log("❌ 错误: balancedShrimpCardsV101 未定义", 'error');
+                    resultDiv.innerHTML = '<div class="error">❌ 卡牌数据未定义</div>';
+                    return false;
+                }
+                
+                const cardCount = balancedShrimpCardsV101.length;
+                log(`✅ 数据加载成功: ${cardCount} 张卡牌`, 'success');
+                
+                resultDiv.innerHTML = `
+                    <div class="success">✅ 数据加载成功</div>
+                    <div>卡牌数量: ${cardCount} 张</div>
+                    <div>示例卡牌: ${balancedShrimpCardsV101[0]?.name || '未知'}</div>
+                `;
+                
+                return true;
+                
+            } catch (error) {
+                log(`❌ 数据加载测试失败: ${error}`, 'error');
+                resultDiv.innerHTML = `<div class="error">❌ 测试失败: ${error}</div>`;
+                return false;
+            }
+        }
+        
+        function testPageFunctions() {
+            log("🔧 测试页面函数...");
+            const resultDiv = document.getElementById('functionResult');
+            resultDiv.innerHTML = '';
+            
+            try {
+                // 检查原页面是否定义了关键函数
+                const functions = [
+                    'filterCards',
+                    'resetFilters', 
+                    'toggleAllEffects',
+                    'generateCardHTML',
+                    'displayCards'
+                ];
+                
+                let missing = [];
+                let available = [];
+                
+                functions.forEach(func => {
+                    if (typeof window[func] === 'function') {
+                        available.push(func);
+                    } else {
+                        missing.push(func);
+                    }
+                });
+                
+                if (missing.length > 0) {
+                    log(`❌ 缺少函数: ${missing.join(', ')}`, 'error');
+                    resultDiv.innerHTML = `
+                        <div class="error">❌ 缺少函数: ${missing.join(', ')}</div>
+                        <div class="success">✅ 可用函数: ${available.join(', ')}</div>
+                    `;
+                    return false;
+                } else {
+                    log(`✅ 所有函数可用: ${available.join(', ')}`, 'success');
+                    resultDiv.innerHTML = `<div class="success">✅ 所有函数可用</div>`;
+                    return true;
+                }
+                
+            } catch (error) {
+                log(`❌ 函数测试失败: ${error}`, 'error');
+                return false;
+            }
+        }
+        
+        function displayTestCards() {
+            log("🦐 显示测试卡牌...");
+            const container = document.getElementById('testCardsContainer');
+            container.innerHTML = '';
+            
+            try {
+                if (typeof balancedShrimpCardsV101 === 'undefined') {
+                    log("❌ 无法显示卡牌: 数据未加载", 'error');
+                    container.innerHTML = '<div class="error">❌ 卡牌数据未加载</div>';
+                    return;
+                }
+                
+                // 显示前3张卡牌
+                const cards = balancedShrimpCardsV101.slice(0, 3);
+                
+                cards.forEach(card => {
+                    const cardDiv = document.createElement('div');
+                    cardDiv.style.padding = '15px';
+                    cardDiv.style.margin = '10px 0';
+                    cardDiv.style.background = 'rgba(255,255,255,0.1)';
+                    cardDiv.style.borderRadius = '8px';
+                    cardDiv.innerHTML = `
+                        <div><strong>${card.name}</strong></div>
+                        <div>费用: ${card.cost} | 攻击: ${card.attack} | 生命: ${card.health}</div>
+                        <div>战斗力: ${card.combat_value} | 性格: ${card.personality}</div>
+                        <div>稀有度: <span style="color: ${card.rarity_color}">${card.rarity}</span></div>
+                    `;
+                    container.appendChild(cardDiv);
+                });
+                
+                log(`✅ 显示 ${cards.length} 张测试卡牌`, 'success');
+                
+            } catch (error) {
+                log(`❌ 显示卡牌失败: ${error}`, 'error');
+            }
+        }
+        
+        // 自动运行测试
+        window.onload = function() {
+            log("🔄 调试页面加载完成，开始自动测试...");
+            setTimeout(() => {
+                testDataLoading();
+                testPageFunctions();
+            }, 500);
+        };
+    </script>
+</body>
+</html>

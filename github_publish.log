@@ -1,0 +1,14 @@
+[0;34m========================================[0m
+[0;32m🎴 Open-Gi-Oh! Skill GitHub更新脚本[0m
+[0;34m========================================[0m
+版本: 1.0.0
+时间: 2026-03-12 14:15:27
+仓库: https://github.com/mu009009/open-gi-oh-skill.git
+
+[1;33m[INFO][0m 检查Git安装...
+[0;32m[SUCCESS][0m ✅ Git 已安装
+[1;33m[INFO][0m 设置工作目录...
+[0;32m[SUCCESS][0m ✅ 工作目录创建: /root/.openclaw/skill-temp
+[1;33m[INFO][0m 克隆或初始化仓库...
+[1;33m[INFO][0m 检查仓库是否存在...
+[0;32m[SUCCESS][0m ✅ 仓库已存在: https://github.com/mu009009/open-gi-oh-skill.git

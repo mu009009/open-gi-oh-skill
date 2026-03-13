@@ -1,0 +1,213 @@
+# Open-Gi-Oh! 卡牌配置
+# 版本: v1.0.0
+# 更新时间: 2026-03-12
+
+# 卡牌属性配置
+attributes:
+  wish:
+    options: ["神秘", "文艺", "战斗", "治愈", "霸气"]
+    description: "虾虾的愿望，影响卡牌的成长方向"
+    
+  personality:
+    options: ["勇敢", "智慧", "狡猾", "沉稳", "狂野"]
+    description: "虾虾的性格，影响攻击/生命值比例"
+    attack_ratios:
+      勇敢: 0.70  # 70%攻击，30%生命
+      智慧: 0.50  # 50%攻击，50%生命
+      狡猾: 0.40  # 40%攻击，60%生命
+      沉稳: 0.30  # 30%攻击，70%生命
+      狂野: 0.80  # 80%攻击，20%生命
+      
+  aesthetic:
+    options: ["梦幻", "酷炫", "华丽", "清新", "独特"]
+    description: "虾虾的审美风格，影响稀有度权重"
+    
+  rarity:
+    options: ["普通", "稀有", "超级稀有", "传说"]
+    weights: [0.60, 0.25, 0.10, 0.05]  # 出现概率
+    description: "卡牌的稀有度等级"
+
+# 费用系统
+cost_system:
+  min_cost: 0
+  max_cost: 10
+  cost_distribution: [0.05, 0.10, 0.15, 0.15, 0.15, 0.10, 0.10, 0.08, 0.07, 0.03, 0.02]
+  description: "费用分布概率"
+
+# 战斗力公式配置
+combat_formulas:
+  base_formula_count: 125  # 5愿望 × 5性格 × 5审美
+  formula_weights:
+    # 基于属性组合的权重系数
+    # 格式: 愿望_性格_审美
+    战斗_勇敢_酷炫: 1.2
+    神秘_智慧_梦幻: 1.1
+    治愈_沉稳_清新: 0.9
+    霸气_狂野_独特: 1.3
+    default: 1.0
+    
+  # 战斗力到费用转换表
+  combat_to_cost:
+    # 战斗力范围: [下限, 上限]
+    # 费用: 对应费用
+    ranges:
+      - combat: [0, 10]
+        cost: 0
+      - combat: [10, 20]
+        cost: 1
+      - combat: [20, 30]
+        cost: 2
+      - combat: [30, 40]
+        cost: 3
+      - combat: [40, 50]
+        cost: 4
+      - combat: [50, 60]
+        cost: 5
+      - combat: [60, 70]
+        cost: 6
+      - combat: [70, 80]
+        cost: 7
+      - combat: [80, 90]
+        cost: 8
+      - combat: [90, 100]
+        cost: 9
+      - combat: [100, 110]
+        cost: 10
+
+# 效果文字配置
+effects:
+  # 效果类型库
+  types:
+    - name: "圣盾"
+      description: "免疫下一次受到的伤害"
+      weight: 0.15
+      
+    - name: "冲锋"
+      description: "登场即可攻击"
+      weight: 0.12
+      
+    - name: "嘲讽"
+      description: "必须优先攻击此单位"
+      weight: 0.10
+      
+    - name: "连击"
+      description: "连续攻击两次"
+      weight: 0.08
+      
+    - name: "亡语"
+      description: "死亡时触发效果"
+      weight: 0.10
+      
+    - name: "战吼"
+      description: "登场时触发效果"
+      weight: 0.12
+      
+    - name: "潜行"
+      description: "无法被选中为目标"
+      weight: 0.08
+      
+    - name: "剧毒"
+      description: "造成的伤害直接消灭目标"
+      weight: 0.05
+      
+    - name: "风怒"
+      description: "每回合可以攻击两次"
+      weight: 0.05
+      
+    - name: "免疫"
+      description: "免疫所有伤害和效果"
+      weight: 0.03
+      
+    - name: "冻结"
+      description: "使目标下回合无法攻击"
+      weight: 0.06
+      
+    - name: "光环"
+      description: "为友方单位提供增益"
+      weight: 0.04
+      
+    - name: "超杀"
+      description: "溢出伤害转化为额外效果"
+      weight: 0.01
+      
+    - name: "复生"
+      description: "第一次死亡后以1点生命值复活"
+      weight: 0.01
+  
+  # 性格与效果偏好
+  personality_preferences:
+    勇敢: ["冲锋", "连击", "风怒"]
+    智慧: ["圣盾", "免疫", "光环"]
+    狡猾: ["潜行", "剧毒", "冻结"]
+    沉稳: ["嘲讽", "亡语", "复生"]
+    狂野: ["超杀", "剧毒", "连击"]
+
+# 平衡性配置
+balance:
+  # 可协商平衡规则
+  negotiable_rules:
+    - name: "无超模卡牌"
+      description: "费用低但效果/战斗力明显强于其他卡牌"
+      check_method: "combinatorial_analysis"
+      
+    - name: "合理游戏时长"
+      description: "游戏至少可以进行7个回合以上"
+      check_method: "simulation"
+      
+    - name: "博弈空间"
+      description: "卡牌的对抗预估有博弈空间，不会出现一边倒的情况"
+      check_method: "strategic_depth_analysis"
+  
+  # 平衡评级标准
+  rating_standards:
+    - rating: "平衡"
+      description: "费用与战斗力匹配良好"
+      criteria: "cost_combat_ratio < 1.1"
+      
+    - rating: "偏弱"
+      description: "战斗力低于费用预期"
+      criteria: "cost_combat_ratio > 1.2"
+      
+    - rating: "偏强"
+      description: "战斗力高于费用预期"
+      criteria: "cost_combat_ratio < 0.9"
+
+# 玩家血量配置
+player_health:
+  base_health: 100  # 从30调整为100
+  adjustment_reason: "适应新的数值体系，提供更长的游戏对局"
+  turn_estimation: 7  # 预期游戏至少进行7个回合
+
+# 网页展示配置
+web_display:
+  card_layout:
+    image_aspect_ratio: "1:1"  # 虾虾画面区域比例
+    top_bar_layout: "费用(左) + 名称(中) + 稀有度+性格(右)"
+    stats_display: "攻击力/生命值同级大字体，战斗力小字"
+    interaction_area: "效果文字与虾虾故事切换"
+    
+  # 颜色主题
+  colors:
+    attack: "#f87171"  # 攻击力颜色
+    health: "#34d399"  # 生命值颜色
+    combat: "#fbbf24"  # 战斗力颜色
+    rarity_common: "#94a3b8"
+    rarity_rare: "#22d3ee"
+    rarity_super: "#fbbf24"
+    rarity_legend: "#f97316"
+    
+  # 性格颜色
+  personality_colors:
+    勇敢: "#f87171"
+    智慧: "#22d3ee"
+    狡猾: "#fbbf24"
+    沉稳: "#94a3b8"
+    狂野: "#f97316"
+
+# 系统配置
+system:
+  skill_version: "1.0.0"
+  last_updated: "2026-03-12"
+  maintainer: "凤丹 (Feng Dan) - 系统暴君"
+  github_repo: "https://github.com/mu009009/open-gi-oh-skill"
+  demo_url: "http://118.196.117.234:8080/open-gi-oh-web/"

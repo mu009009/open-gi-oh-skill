@@ -1,0 +1,35 @@
+[0;34m========================================[0m
+[0;32m🎴 Open-Gi-Oh! Skill 安全发布[0m
+[0;34m========================================[0m
+时间: 2026-03-12 14:21:54
+
+[0;32m✅ token已读取 (长度: 40)[0m
+[0;32m✅ token文件已安全删除[0m
+[1;33m[INFO] 正在克隆仓库...[0m
+[0;32m✅ 仓库克隆成功[0m
+[1;33m[INFO] 复制Skill文件...[0m
+[0;32m✅ 所有文件复制完成[0m
+[1;33m[INFO] 发现更改，正在提交...[0m
+[main 1396724] 🎴 Open-Gi-Oh! Skill v1.0.0 - 最终版发布 2026-03-12 14:21:58
+ 12 files changed, 8409 insertions(+), 279 deletions(-)
+ create mode 100644 config/card_config.yaml
+ create mode 100644 references/combat_formulas.json
+ create mode 100755 scripts/deploy_web.sh
+ create mode 100755 scripts/update_github.sh
+ create mode 100644 web_files/advanced_shrimp_cards.js
+ create mode 100644 web_files/final_shrimp_cards_preview.html
+ create mode 100644 web_files/index.html
+ create mode 100644 web_files/open-gi-oh-battle-prototype.html
+ create mode 100644 web_files/open-gi-oh-complete-demo.html
+ create mode 100644 web_files/shrimp_formulas.json
+[0;32m✅ 提交成功[0m
+[1;33m[INFO] 推送到GitHub...[0m
+[1;33m⚠️ 推送失败，尝试设置上游分支[0m
+[0;32m✅ 工作目录已清理[0m
+
+[0;32m🎉 Open-Gi-Oh! Skill 发布完成！[0m
+仓库: https://github.com/mu009009/open-gi-oh-skill
+版本: v1.0.0
+时间: 2026-03-12 14:26:14
+
+[0;34m🔥 系统暴君宣言：Skill已发布！所有要求已实现！[0m
